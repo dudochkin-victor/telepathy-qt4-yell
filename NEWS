@@ -1,0 +1,69 @@
+telepathy-qt4-yell 0.1.4 (2011-05-04)
+======================================
+
+The "Aruba, one happy island" release.
+
+Enhancements:
+ * Implement removeRows method in AbstractConversationModel
+ * Keep count of unread/missed messages in SessionConversationModel
+ * Added auto-generate classes for Channel.Interface.CredentialsStorage
+
+Fixes:
+ * Fix media call caps update when changed
+
+telepathy-qt4-yell 0.1.3 (2011-04-22)
+======================================
+
+The "time-shifting" release.
+
+Enhancements:
+ * Refactored the conversation item into purpose-specific items
+
+telepathy-qt4-yell 0.1.2 (2011-04-14)
+======================================
+
+The "can I call" release.
+
+Enhancements:
+ * Added ContactCapabilities and RequestableChannelClass support for Call.
+ * Added some convenience methods to the AccountsModel.
+ * Refactored ConversationModel into two classes: AbstractConversationModel
+   which is just a storage class, and SessionConversationModel which stores a
+   chat conversation for a chat session with a given contact.
+ * Updated cmake module to find TelepathyQt4.
+
+Fixes:
+ * Added required linking to telepathy-glib.
+ * Fixed contact list loading.
+ * Fixed filtering of accounts through proxies when the connection status
+   changes.
+ * Only emit contacts added and removed signals if there are contacts actually
+   being added/removed.
+
+telepathy-qt4-yell 0.1.1 (2011-02-16)
+======================================
+
+The "keep calling" release.
+
+API changes:
+ * Removed CallChannel::awaitingLocal/RemoteAnswer in favour of CallChannel::flags().
+
+Enhancements:
+ * Added auto-generate classes for Call.Content.CodecOffer, Call.Content.Media, Call.Content.Mute,
+   Call.Stream.EndPoint, Call.Stream.Media.
+ * Added high-level API for Call.CallState/CallFlags/InitialTransport/InitialAudio/InitialVideo/
+   InitialAudioName/InitialVideoName/MutableContents properties and Call.CallStateChanged.
+ * Added Telepathy Farstream support through a new static library.
+
+Fixes:
+ * Minor documentation fixes.
+
+telepathy-qt4-yell 0.1.0 (2011-01-31)
+======================================
+
+The "beginning" release.
+
+The first release of telepathy-qt4-yell features:
+
+ * High-level API and auto-generated client classes for Call.DRAFT.
+ * Models support.

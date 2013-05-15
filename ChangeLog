@@ -1,0 +1,3984 @@
+commit 28765c4cadb47b2b0575a3ccf6e706090b9c6cf4
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed May 4 10:56:31 2011 -0700
+
+    Prepare release 0.1.4
+
+ CMakeLists.txt |    4 ++--
+ NEWS           |    6 ++----
+ 2 files changed, 4 insertions(+), 6 deletions(-)
+
+commit a2ba453a114568d4ce368caf76ab9b3180bbea1e
+Merge: 5537a7c 1a862bd
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed May 4 07:05:07 2011 -0700
+
+    Merge branch 'credentials'
+    
+    Reviewed by: Andre Moreira Magalhaes <andre.magalhaes@collabora.co.uk>
+
+commit 1a862bddc99a3c5dd46941076446db7ab4bf3bcd
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue May 3 13:40:54 2011 -0700
+
+    Update NEWS with the credentials storage interface
+
+ NEWS |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit d77e66504d6ce95ad9dbae31a69af89c5f32295f
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Mon Apr 25 11:42:16 2011 -0700
+
+    Auto-generate code for Channel.Interface.CredentialsStorage
+
+ TelepathyQt4Yell/CMakeLists.txt                    |    1 +
+ .../ChannelInterfaceCredentialsStorageInterface    |   13 ++++
+ TelepathyQt4Yell/channel.xml                       |    1 +
+ spec/Channel_Interface_Credentials_Storage.xml     |   59 ++++++++++++++++++++
+ 4 files changed, 74 insertions(+), 0 deletions(-)
+
+commit 5537a7cfd36c0860f72ba6a1190dd0b9e837fe12
+Merge: 8c76132 0ea58d1
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed May 4 06:58:08 2011 -0700
+
+    Merge remote branch 'mbatle/pendingmessages'
+    
+    Reviewed by: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+
+commit 8c76132524320f9c375c668e865e8d3574109b27
+Merge: eed7c4a eaa13e1
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed May 4 06:48:46 2011 -0700
+
+    Merge remote branch 'mbatle/capsupdate'
+    
+    Reviewed by: Andre Moreira Magalhaes <andre.magalhaes@collabora.co.uk>
+    Reviewed by: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+
+commit eed7c4aa0157a3f49cfc1d032175c9c91c2cc7bc
+Merge: 235467d bafe57e
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed May 4 06:35:14 2011 -0700
+
+    Merge remote branch 'mbatle/remove'
+    
+    Reviewed by: Andre Moreira Magalhaes <andre.magalhaes@collabora.co.uk>
+    Reviewed by: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+
+commit 0ea58d1d47fa7cefdab1e244e0b83c67d5c220d4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed May 4 08:06:05 2011 -0500
+
+    Update NEWS file
+
+ NEWS |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit eaa13e11aaa0f36f78d11e668be1cf8ed40baa70
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed May 4 08:08:22 2011 -0500
+
+    Update NEWS
+
+ NEWS |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit bafe57ebdbef2a66dce77d9e86d7da82c314caec
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed May 4 08:07:20 2011 -0500
+
+    Update NEWS
+
+ NEWS |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 786cde74246d5bf09ee9daa8785d34a19268df54
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue May 3 16:17:54 2011 -0500
+
+    Models: SessionConversationModel should keep count of unread messages
+
+ .../Models/session-conversation-model.cpp          |   56 +++++++++++++++-----
+ .../Models/session-conversation-model.h            |    6 ++
+ 2 files changed, 48 insertions(+), 14 deletions(-)
+
+commit c7d0b094f7a2f2302f6adf250c1570e085e66b58
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Sun May 1 21:14:21 2011 -0500
+
+    Caps: Make capabilities update when changed
+
+ TelepathyQt4Yell/Models/contact-model-item.cpp |    8 ++++++++
+ TelepathyQt4Yell/Models/contact-model-item.h   |    1 +
+ 2 files changed, 9 insertions(+), 0 deletions(-)
+
+commit 3343cfda3b20e27603ba3f90e84df7484b749628
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 29 09:25:22 2011 -0500
+
+    Fix off by one error in condition to delete elements
+
+ .../Models/abstract-conversation-model.cpp         |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 3d2892601f00476ce6d5c08a367dd3aa43979ee6
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 29 08:52:53 2011 -0500
+
+    Added check for count > 0 in removeRows
+
+ .../Models/abstract-conversation-model.cpp         |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d39c1b0dd67cdbb662414a5b9024932196a2ec23
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 29 07:24:25 2011 -0500
+
+    Added missing spaces to follow style guide
+
+ .../Models/abstract-conversation-model.cpp         |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 1349302b2236e0bced37d0df69c3a18e34cdd1ad
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Thu Apr 28 15:00:44 2011 -0500
+
+    Models: implemented standard method to removeRows in AbstractConversationModel
+
+ .../Models/abstract-conversation-model.cpp         |   13 +++++++++++++
+ .../Models/abstract-conversation-model.h           |    2 ++
+ 2 files changed, 15 insertions(+), 0 deletions(-)
+
+commit 235467d79626164a102492e130f08f3416d2ca0a
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Apr 22 07:42:07 2011 -0700
+
+    Start 0.1.4 development
+
+ CMakeLists.txt |    2 +-
+ NEWS           |   11 +++++++++++
+ 2 files changed, 12 insertions(+), 1 deletions(-)
+
+commit 6f767193ecb4b023d24ec61a06cf9a9160b005d3
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Apr 22 07:00:10 2011 -0700
+
+    Prepare release 0.1.3
+
+ CMakeLists.txt |    4 ++--
+ NEWS           |    9 +++------
+ 2 files changed, 5 insertions(+), 8 deletions(-)
+
+commit 992f6fd64b62a1c4d3b46a53ef5648c2ccaf50cb
+Merge: 117555d 1b1f8b3
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Apr 22 06:51:42 2011 -0700
+
+    Merge remote-tracking branch 'mbatle/refactor-events'
+    
+    Reviewed by: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+    Reviewed by: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+
+commit 1b1f8b31d122e03049d8a579551e1d20e0791872
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 15 12:24:30 2011 -0500
+
+    Fix receiver in TextEventItem
+
+ .../Models/session-conversation-model.cpp          |   13 +++++++++++--
+ 1 files changed, 11 insertions(+), 2 deletions(-)
+
+commit b8482500b5eb52f584fa7fb01600b07e3670a726
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 15 09:50:47 2011 -0500
+
+    Models: add CustomEventText for inline messaging and user extension and misc stuff
+    Deleted messageOrigin, not appropiate and misused to extend functionality, better use CustomEventItem or create new EventItem class
+    More robust checking in AbstractConversationModel::data
+    Renamed message role to messageText
+
+ TelepathyQt4Yell/Models/CMakeLists.txt             |    4 +
+ TelepathyQt4Yell/Models/CustomEventItem            |   13 ++++
+ .../Models/abstract-conversation-model.cpp         |   66 ++++++++++++-------
+ .../Models/abstract-conversation-model.h           |    5 +-
+ TelepathyQt4Yell/Models/custom-event-item.cpp      |   64 +++++++++++++++++++
+ TelepathyQt4Yell/Models/custom-event-item.h        |   67 ++++++++++++++++++++
+ .../Models/session-conversation-model.cpp          |   16 ++---
+ TelepathyQt4Yell/Models/text-event-item.cpp        |   23 ++-----
+ TelepathyQt4Yell/Models/text-event-item.h          |   11 +---
+ 9 files changed, 209 insertions(+), 60 deletions(-)
+
+commit 074dcae9f13e2ccd6090d7869ead5543288bc228
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Apr 13 17:44:40 2011 -0500
+
+    Refactor the conversation item into event, text event and call event item classes
+
+ TelepathyQt4Yell/Models/CMakeLists.txt             |   32 +++--
+ TelepathyQt4Yell/Models/CallEventItem              |   13 ++
+ TelepathyQt4Yell/Models/ConversationItem           |   13 --
+ TelepathyQt4Yell/Models/EventItem                  |   13 ++
+ TelepathyQt4Yell/Models/TextEventItem              |   13 ++
+ .../Models/abstract-conversation-model.cpp         |  148 +++++++++++++++-----
+ .../Models/abstract-conversation-model.h           |   33 +++--
+ TelepathyQt4Yell/Models/call-event-item.cpp        |   97 +++++++++++++
+ TelepathyQt4Yell/Models/call-event-item.h          |   69 +++++++++
+ TelepathyQt4Yell/Models/conversation-item.cpp      |   84 -----------
+ TelepathyQt4Yell/Models/conversation-item.h        |   67 ---------
+ TelepathyQt4Yell/Models/event-item.cpp             |   73 ++++++++++
+ TelepathyQt4Yell/Models/event-item.h               |   60 ++++++++
+ .../Models/session-conversation-model.cpp          |   20 ++-
+ .../Models/session-conversation-model.h            |    2 +-
+ TelepathyQt4Yell/Models/text-event-item.cpp        |   72 ++++++++++
+ TelepathyQt4Yell/Models/text-event-item.h          |   69 +++++++++
+ 17 files changed, 649 insertions(+), 229 deletions(-)
+
+commit 117555d24ef46117327eabd2a05b7ac5122eff21
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 14 11:27:30 2011 -0300
+
+    Start 0.1.3 development
+
+ CMakeLists.txt |    2 +-
+ NEWS           |   11 +++++++++++
+ 2 files changed, 12 insertions(+), 1 deletions(-)
+
+commit cfd32d781c2b4288225c9a4561a043555ebc68fc
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 14 03:52:13 2011 -0300
+
+    Prepare release 0.1.2
+
+ CMakeLists.txt |    4 ++--
+ NEWS           |   20 ++++++++++++++------
+ 2 files changed, 16 insertions(+), 8 deletions(-)
+
+commit 8ff6cf788e88b8c097c4f5384f44a810fe420c82
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 14 11:15:25 2011 -0300
+
+    call-chan test: Only connect to remoteSendingStateChanged when we are ready.
+
+ tests/dbus/call-chan.cpp |    7 ++++---
+ 1 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 358de1f6cc3fd64bf605f2c6eea5350b01f7ba4a
+Merge: 0dabeb0 0fbfcba
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 14 03:47:46 2011 -0300
+
+    Merge remote-tracking branch 'boiko/my_fixes'
+    
+    Conflicts:
+    	NEWS
+    
+    Reviewed-by: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+
+commit 0dabeb0dd6a344c433bc07a9849ad7a4a85dfc61
+Merge: efdbc76 8669872
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 14 03:46:48 2011 -0300
+
+    Merge remote-tracking branch 'boiko/kde_fixes'
+
+commit 0fbfcbaf129735fba98c0efa76044335e6baa974
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Apr 13 08:06:48 2011 -0700
+
+    Update news for the contact add/remove fixes
+
+ NEWS |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 57200d715e672fa36b3c7381d7c01cfc0e96fdcc
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Apr 1 14:49:50 2011 -0700
+
+    Only emit the childrenRemoved signal if the item has any child to be removed
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit 0f62f8464cbf7e7a36efeabd0adc94a1ff8bd300
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue Mar 29 14:14:32 2011 -0700
+
+    Only notify new contacts if there is any
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit 866987299a1eb88559916f70bd524ceeeed4faa6
+Merge: efdbc76 a0d2496
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Apr 13 07:41:16 2011 -0700
+
+    Merge branch 'kde_tp' into kde_fixes
+    
+    Reviewed by: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+
+commit a0d249696aa9d144884dceeebefb636a8e0adf97
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Apr 13 07:39:02 2011 -0700
+
+    Update NEWS to list the fixes from the kde git repository
+
+ NEWS |    5 +++--
+ 1 files changed, 3 insertions(+), 2 deletions(-)
+
+commit 2c616d26ec7a3ee6f0e1960a32b81a210eb099a4
+Author: David Edmundson <kde@davidedmundson.co.uk>
+Date:   Tue Apr 12 21:40:05 2011 +0200
+
+    Only load contacts when ContactManager is ready, reduces chance of having an empty contact list on first connect/load.
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |   23 +++++++++++++++--------
+ TelepathyQt4Yell/Models/accounts-model-item.h   |    1 +
+ 2 files changed, 16 insertions(+), 8 deletions(-)
+
+commit 74c7bb90ed7e6cb829cdf995e872b941a2cec59f
+Author: David Edmundson <kde@davidedmundson.co.uk>
+Date:   Fri Mar 25 14:19:43 2011 +0100
+
+    Add onChanged() call in AccountsModelItem::onStatusChanged(..) so that it can trigger proxy model filters to filter out accounts that just went offline
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 162324756560f32617ea68782cfdd54d822d0dec
+Author: Martin Klapetek <martin.klapetek@gmail.com>
+Date:   Tue Apr 12 15:38:04 2011 -0700
+
+    This commit adds another new method contactForIndex(QModelIndex), which is very handy for context menus (several operations on contact as well as getting contact info).
+
+ TelepathyQt4Yell/Models/accounts-model.cpp |   11 +++++++++++
+ TelepathyQt4Yell/Models/accounts-model.h   |    1 +
+ 2 files changed, 12 insertions(+), 0 deletions(-)
+
+commit e09615162161de13f6897f72516efc3670adc5fc
+Author: Martin Klapetek <martin.klapetek@gmail.com>
+Date:   Sat Mar 12 00:51:59 2011 +0100
+
+    If the account is already connected when the model is being created, load all contacts
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    1 +
+ TelepathyQt4Yell/Models/accounts-model-item.h   |    2 ++
+ 2 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 4b8a1f6243bd7f6917be6bbfb227475a319dff5c
+Author: Martin Klapetek <martin.klapetek@gmail.com>
+Date:   Fri Mar 11 20:47:48 2011 +0100
+
+    Added method for getting account from contact index
+
+ TelepathyQt4Yell/Models/accounts-model.cpp |   11 +++++++++++
+ TelepathyQt4Yell/Models/accounts-model.h   |    1 +
+ 2 files changed, 12 insertions(+), 0 deletions(-)
+
+commit efdbc762b4eeb7344ccc7838c6df670c7fc7cb15
+Merge: 6ac133e 86026a8
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Apr 11 16:45:21 2011 -0300
+
+    Merge remote-tracking branch 'mbatle/cmakefix'
+    
+    Reviewed-by: Andre Moreira Magalhaes <andre.magalhaes@collabora.co.uk>
+
+commit 86026a8261eabd15c098793d5ab57a382d6f8c6f
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Apr 8 15:35:41 2011 -0500
+
+    Fix not working build after update of FindTelepathyQt4
+
+ CMakeLists.txt |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 6ac133ef3699336dccbee56d8238eab3da654078
+Merge: 854560c 73ad009
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Thu Apr 7 14:41:36 2011 -0300
+
+    Merge remote-tracking branch 'mbatle/conversation-model'
+    
+    Reviewed-by: Andre Moreira Magalhaes <andre.magalhaes@collabora.co.uk>
+    Reviewed-by: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+
+commit 73ad009b6450214ce22e0b90ba717b3127a371f4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Thu Apr 7 11:45:13 2011 -0500
+
+    Models: Fix spacing to follow style guide
+
+ .../Models/session-conversation-model.cpp          |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 6eede14d2743d7f56e78208e21c8a47664f70494
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Apr 6 16:15:04 2011 -0500
+
+    Models: Fix compile problem with Tp::ChannelChatState
+
+ .../Models/abstract-conversation-model.h           |    4 ----
+ .../Models/session-conversation-model.cpp          |    2 +-
+ 2 files changed, 1 insertions(+), 5 deletions(-)
+
+commit f3356a80dcd9015a7fb0c67e8726764c934c48f1
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Apr 6 16:14:42 2011 -0500
+
+    Fix comment "part of TelepathyQt4Yell"
+
+ TelepathyQt4Yell/channel-class-spec.cpp |    2 +-
+ TelepathyQt4Yell/channel-class-spec.h   |    2 +-
+ TelepathyQt4Yell/channel-factory.cpp    |    2 +-
+ TelepathyQt4Yell/channel-factory.h      |    2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+commit fa62cb02f5877ac40779e0b05459bca1c1d52567
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Apr 6 16:14:10 2011 -0500
+
+    Models: fix header guard #define
+    Models: fix comment "part of TelepathyQt4Yell Models"
+
+ TelepathyQt4Yell/Models/SessionConversationModel   |    6 +++---
+ .../Models/abstract-conversation-model.cpp         |    2 +-
+ .../Models/abstract-conversation-model.h           |    2 +-
+ TelepathyQt4Yell/Models/accounts-model-item.cpp    |    2 +-
+ TelepathyQt4Yell/Models/accounts-model-item.h      |    2 +-
+ TelepathyQt4Yell/Models/accounts-model.cpp         |    2 +-
+ TelepathyQt4Yell/Models/accounts-model.h           |    2 +-
+ TelepathyQt4Yell/Models/avatar-image-provider.cpp  |    2 +-
+ TelepathyQt4Yell/Models/avatar-image-provider.h    |    2 +-
+ TelepathyQt4Yell/Models/contact-model-item.cpp     |    2 +-
+ TelepathyQt4Yell/Models/contact-model-item.h       |    2 +-
+ TelepathyQt4Yell/Models/conversation-item.cpp      |    2 +-
+ TelepathyQt4Yell/Models/conversation-item.h        |    2 +-
+ TelepathyQt4Yell/Models/flat-model-proxy.cpp       |    2 +-
+ TelepathyQt4Yell/Models/flat-model-proxy.h         |    2 +-
+ .../Models/session-conversation-model.cpp          |    2 +-
+ .../Models/session-conversation-model.h            |    4 ++--
+ TelepathyQt4Yell/Models/tree-node.cpp              |    2 +-
+ TelepathyQt4Yell/Models/tree-node.h                |    2 +-
+ 19 files changed, 22 insertions(+), 22 deletions(-)
+
+commit 7c4f002d345d681105028ea2cef689be831ec353
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Mar 30 18:53:01 2011 -0500
+
+    Models: Move some methods to public visibility, since they can be used in composition of models (and not just inheritance)
+
+ .../Models/abstract-conversation-model.h           |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 1b854345d38f30bfa65e9afe42effa8cc5e46fd7
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 08:54:39 2011 -0500
+
+    Models: Fix bug order of inserted items was reversed
+
+ .../Models/abstract-conversation-model.cpp         |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 9ad56e1558c5936542a40fe20f4c1584142797f7
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Thu Mar 24 11:29:49 2011 -0500
+
+    Remove non-implemented method in AbstractConversationModel
+
+ .../Models/abstract-conversation-model.h           |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit 2b7182d410ad45405b5df1f321ce489f9956bf92
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 22 19:35:50 2011 -0500
+
+    Fixed makefile with new files for conversation model
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 7cef5980200762b96b93f8b655ee3f09cd56a8e1
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 22 19:17:19 2011 -0500
+
+    Refactored ConversationModel into two classes AbstractConversationModel and SessionConversationModel
+
+ TelepathyQt4Yell/Models/AbstractConversationModel  |   14 ++
+ TelepathyQt4Yell/Models/CMakeLists.txt             |    9 +-
+ TelepathyQt4Yell/Models/ConversationModel          |   14 --
+ TelepathyQt4Yell/Models/SessionConversationModel   |   14 ++
+ .../Models/abstract-conversation-model.cpp         |  154 ++++++++++++++
+ .../Models/abstract-conversation-model.h           |   80 +++++++
+ TelepathyQt4Yell/Models/conversation-model.cpp     |  223 --------------------
+ TelepathyQt4Yell/Models/conversation-model.h       |   91 --------
+ .../Models/session-conversation-model.cpp          |  131 ++++++++++++
+ .../Models/session-conversation-model.h            |   70 ++++++
+ 10 files changed, 469 insertions(+), 331 deletions(-)
+
+commit 854560c755c94cb44ba2119c21e7d9a6c4dbccda
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Apr 1 12:20:30 2011 -0300
+
+    ContactCapabilities: Fix header.
+
+ TelepathyQt4Yell/contact-capabilities.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 62949c3ab975d7767ee0b2746ef2ac160bc8c5e1
+Merge: 8cd63c6 a063f12
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Apr 1 12:17:49 2011 -0300
+
+    Merge remote-tracking branch 'mbatle/callcaps'
+    
+    Reviewed-by: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+
+commit a063f12ee3cff5e08895cda221d51de6c931c1ae
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 12:36:17 2011 -0500
+
+    Fix friend class declaration in ContactCapabilities
+
+ TelepathyQt4Yell/contact-capabilities.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 4f0d6c60f6e2fc25f8a3b99b2128a7d36ffbb2bc
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 12:36:11 2011 -0500
+
+    Fix export of Tpy::ContactCapabilities constructor
+
+ TelepathyQt4Yell/contact-capabilities.h |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit cb96fb693075e23e0b36a031fbbd6687b6be9e37
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 11:55:54 2011 -0500
+
+    Remove anonymous namespace for CallContactCaps
+    Use Tpy::ContactCapabilities and Tpy::RequestableChannelClassSpec instead
+
+ TelepathyQt4Yell/Models/contact-model-item.cpp |  275 +-----------------------
+ 1 files changed, 5 insertions(+), 270 deletions(-)
+
+commit b8df21eebf62bb0edcc74ef4bf04a0660c39996d
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 11:54:59 2011 -0500
+
+    Rename CallCapabilityRole to MediaCallCapabilityRole
+
+ TelepathyQt4Yell/Models/accounts-model.cpp |    2 +-
+ TelepathyQt4Yell/Models/accounts-model.h   |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit c009f876e0f855003179ca4b2441251b1702fdeb
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 11:53:15 2011 -0500
+
+    Create Tpy::ContactCapabilities derived from Tp::ContactCapabilities
+
+ TelepathyQt4Yell/CMakeLists.txt           |    2 +
+ TelepathyQt4Yell/ContactCapabilities      |   13 +++
+ TelepathyQt4Yell/contact-capabilities.cpp |  141 +++++++++++++++++++++++++++++
+ TelepathyQt4Yell/contact-capabilities.h   |   62 +++++++++++++
+ 4 files changed, 218 insertions(+), 0 deletions(-)
+
+commit a7d5f79306073d81142b97a68f32fd0e75df44be
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Mar 29 11:54:20 2011 -0500
+
+    Create Tpy::RequestableChannelClassSpec derived from Tp::RequestableChannelClassSpec
+
+ TelepathyQt4Yell/CMakeLists.txt                    |    4 +
+ TelepathyQt4Yell/RequestableChannelClassSpec       |   13 ++
+ .../requestable-channel-class-spec.cpp             |  190 ++++++++++++++++++++
+ TelepathyQt4Yell/requestable-channel-class-spec.h  |   55 ++++++
+ 4 files changed, 262 insertions(+), 0 deletions(-)
+
+commit 6a61a627c3d4d49aa425a50ace92c56889a41ec4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Mar 25 08:10:35 2011 -0500
+
+    Models: Fix dependency problem, thanks Gustavo Boiko to realize and fix it
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit e0659fc89061a922edd3f916a219816bb93f52c4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Mar 18 10:36:59 2011 -0500
+
+    Remove debug print
+
+ TelepathyQt4Yell/Models/contact-model-item.cpp |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit bca8402a6ab5165b25034a33fd63b846b3d6a70f
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Feb 25 15:26:35 2011 -0500
+
+    Models: removed some debug output from call capabilities checking
+
+ TelepathyQt4Yell/Models/contact-model-item.cpp |   14 --------------
+ 1 files changed, 0 insertions(+), 14 deletions(-)
+
+commit 8542420c2998351a241f7f68a235b867edacf164
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Feb 25 13:00:37 2011 -0500
+
+    Models: add call draft capabilities info to models
+
+ TelepathyQt4Yell/Models/accounts-model.cpp     |    8 +-
+ TelepathyQt4Yell/Models/accounts-model.h       |    8 +-
+ TelepathyQt4Yell/Models/contact-model-item.cpp |  307 +++++++++++++++++++++++-
+ 3 files changed, 316 insertions(+), 7 deletions(-)
+
+commit 8cd63c6dfdc1f47dec26705a1b93aab0e2928072
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Tue Mar 29 17:04:13 2011 -0300
+
+    Update FindTelepathyQt4.cmake from kde-telepathy.
+
+ cmake/modules/FindTelepathyQt4.cmake |   47 ++++++++++++++++++++++-----------
+ 1 files changed, 31 insertions(+), 16 deletions(-)
+
+commit 8a4775cd6edc2c11203dc98176c017ab0d625970
+Merge: 4f7072f 3ea55bd
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Feb 21 10:16:28 2011 -0300
+
+    Merge remote branch 'gkiagia/build-fix'
+    
+    Reviewed-by: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+
+commit 3ea55bd5c050e52334b6c9183f19616c9ba14b97
+Author: George Kiagiadakis <george.kiagiadakis@collabora.co.uk>
+Date:   Fri Feb 18 17:47:05 2011 +0200
+
+    Farstream: also require and link to telepathy-glib.
+
+ CMakeLists.txt                            |   14 +++++++-------
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |    2 ++
+ 2 files changed, 9 insertions(+), 7 deletions(-)
+
+commit 4f7072f3448664ddeba76ceb52bf1232b20d6d9c
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 19:07:18 2011 -0200
+
+    Start 0.1.2 development
+
+ CMakeLists.txt |    2 +-
+ NEWS           |   11 +++++++++++
+ 2 files changed, 12 insertions(+), 1 deletions(-)
+
+commit e185aab15701688dd7a07140a7f45984f4bdd082
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 19:03:58 2011 -0200
+
+    Prepare release 0.1.1
+
+ CMakeLists.txt |    4 ++--
+ NEWS           |   19 +++++++++++++------
+ 2 files changed, 15 insertions(+), 8 deletions(-)
+
+commit 1d6e3a21bcb69951378a19a9efb08107938fcb0d
+Merge: 8e172eb fc2380a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 18:54:38 2011 -0200
+
+    Merge branch 'farstream'
+    
+    Reviewed-by: Mateu Batle <mateu.batle@collabora.co.uk>
+
+commit fc2380a0485efdc795585bd166ecceed8b1a0701
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:40:31 2011 -0200
+
+    Farstream/Channel: Some coding style fixes.
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   33 +++++++++++++++++++------------
+ 1 files changed, 20 insertions(+), 13 deletions(-)
+
+commit 97c58986755737b96a91fbe292e7c69fcbc1fd97
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:37:15 2011 -0200
+
+    Farstream/PendingTfChannel: Constify tfChannel getter.
+
+ TelepathyQt4Yell/Farstream/channel.cpp |    2 +-
+ TelepathyQt4Yell/Farstream/channel.h   |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 289e9aedd480f2868db1c02ee27f9cf5937c497f
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:31:40 2011 -0200
+
+    Farstream/Channel: Added a static method to create a FastreamChannelFactory.
+    
+    Also now the constructor is private to now allow creating a FastreamChannelFactory directly.
+    The create(channel) method is now renamed to createTfChannel as create is used to create an instance
+    of the class.
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   10 +++++++++-
+ TelepathyQt4Yell/Farstream/channel.h   |   16 +++++++---------
+ 2 files changed, 16 insertions(+), 10 deletions(-)
+
+commit 0755c21f72f88bf986ad22c74a31f1c5f610f6c7
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:29:45 2011 -0200
+
+    Farstream/Types: Include TelepathyQt4Yell/Types instead of TelepathyQt4/Types.
+
+ TelepathyQt4Yell/Farstream/types.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 5189945b790a3a4cdab4ed4029f67ea67332a48b
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:40:13 2011 -0200
+
+    Farstream: Added PendingTfChannel fancy header.
+
+ TelepathyQt4Yell/Farstream/CMakeLists.txt   |    1 +
+ TelepathyQt4Yell/Farstream/PendingTfChannel |   13 +++++++++++++
+ 2 files changed, 14 insertions(+), 0 deletions(-)
+
+commit 8dd42e962587e450ddbe423248b160a1125bb23a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:29:26 2011 -0200
+
+    Farstream: Added Global fancy header.
+
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |    1 +
+ TelepathyQt4Yell/Farstream/Global         |   13 +++++++++++++
+ 2 files changed, 14 insertions(+), 0 deletions(-)
+
+commit 6a8ca5b8bcc4e4639c4ee656c98fd360ad58823e
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 16 12:31:06 2011 -0200
+
+    Farstream: Only build the library statically. This is a "unstable" library.
+
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |   20 +++++++++++---------
+ 1 files changed, 11 insertions(+), 9 deletions(-)
+
+commit 8e172ebaf4f5fbac9ad0ab2c95535aa976a4a9d3
+Merge: 8f7fae4 5483660
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 15 19:57:16 2011 -0500
+
+    Merge branch 'farstream'
+    
+    Reviewed-by: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+
+commit 54836606badea2f652a11d1f2c5923bd9f0ba417
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 15 18:48:44 2011 -0500
+
+    Fixed copyright year
+
+ TelepathyQt4Yell/Farstream/types.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit adcbe6bd466999780de4e066bea9df62e4f7de85
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 15 18:48:36 2011 -0500
+
+    Deleted empty FarstreamChannelFactory::Private
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   10 +---------
+ 1 files changed, 1 insertions(+), 9 deletions(-)
+
+commit 6688ce3f655a472dfaae53b25744539db243e759
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 15 18:17:55 2011 -0500
+
+    Renamed FarstreamChannel to FarstreamChannelFactory
+    Using PendingTfChannel for async operation and notify error and success (PendingOperation)
+    Using of Private member to allow future extension without ABI break
+    Added types.h and Types
+
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |    4 +-
+ TelepathyQt4Yell/Farstream/Types          |   13 ++++
+ TelepathyQt4Yell/Farstream/channel.cpp    |   92 ++++++++++++++++++++++-------
+ TelepathyQt4Yell/Farstream/channel.h      |   40 ++++++++++---
+ TelepathyQt4Yell/Farstream/types.h        |   39 ++++++++++++
+ 5 files changed, 156 insertions(+), 32 deletions(-)
+
+commit 765d3aab070b71e2b8ce0af5a98885fda74336a4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Sat Feb 12 08:44:54 2011 -0500
+
+    Fixed problem with referencing
+
+ TelepathyQt4Yell/Farstream/channel.cpp |    3 +--
+ 1 files changed, 1 insertions(+), 2 deletions(-)
+
+commit 43195e9be19cd8738de13cce47a62871ed891a75
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Feb 2 08:12:45 2011 -0500
+
+    Added farstream channel error signal
+    Changed naming to Qt style
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   20 ++++++++++----------
+ TelepathyQt4Yell/Farstream/channel.h   |    3 ++-
+ 2 files changed, 12 insertions(+), 11 deletions(-)
+
+commit a59a92036b3d05bc88fcd14b4967d8adc10639f1
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 12:20:50 2011 -0500
+
+    Removed not needed virtual destructor
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   10 ----------
+ TelepathyQt4Yell/Farstream/channel.h   |    1 -
+ 2 files changed, 0 insertions(+), 11 deletions(-)
+
+commit 8d3cb63da5046e6b590c2eb00aa51c7789340d4d
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 12:20:34 2011 -0500
+
+    Fixed bugs done in renaming in makefile
+
+ CMakeLists.txt |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit fc69b1bdf248e0a7fcc0cd4bfecabd272cdd64e8
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:16:34 2011 -0500
+
+    Changed class Tpy::FarstreamChannel to not use member variables
+
+ TelepathyQt4Yell/Farstream/channel.cpp |   15 +++++++--------
+ TelepathyQt4Yell/Farstream/channel.h   |    6 +-----
+ 2 files changed, 8 insertions(+), 13 deletions(-)
+
+commit 4385ebae1390fe765b3b244c009d239f80df5f0d
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:14:17 2011 -0500
+
+    Renaming farsight -> farstream
+
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |   40 ++++++++++++++--------------
+ TelepathyQt4Yell/Farstream/Channel        |   12 ++++----
+ TelepathyQt4Yell/Farstream/channel.cpp    |   36 +++++++++++++-------------
+ TelepathyQt4Yell/Farstream/channel.h      |   26 +++++++++---------
+ TelepathyQt4Yell/Farstream/global.h       |   10 +++---
+ 5 files changed, 62 insertions(+), 62 deletions(-)
+
+commit d8c823d2a0312381c0183cde2c0a42576963667b
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:07:33 2011 -0500
+
+    Modified .pc files for Farstream instead of Farsight
+
+ .../TelepathyQt4YellFarstream-uninstalled.pc.in    |    8 ++++----
+ TelepathyQt4Yell/TelepathyQt4YellFarstream.pc.in   |    8 ++++----
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+commit b4788d7e21eb0027504b788ddfed0de693b700c4
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:01:54 2011 -0500
+
+    Changing naming to Farstream (instead of Farsight)
+
+ TelepathyQt4Yell/CMakeLists.txt |   16 ++++++++--------
+ 1 files changed, 8 insertions(+), 8 deletions(-)
+
+commit 61d81d6e4113fc47bd19ed6339f00a951043f979
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:01:34 2011 -0500
+
+    Modified main CMakeLists.txt to search for telepathy-farstream instead of telepathy-farsight
+
+ CMakeLists.txt |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit 18021c206f7d681cde2aca61478178063c5f82b8
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:00:33 2011 -0500
+
+    Changed to find telepathy-farstream library
+
+ cmake/modules/FindTelepathyFarstream.cmake |   51 ++++++++++++++-------------
+ 1 files changed, 26 insertions(+), 25 deletions(-)
+
+commit 1b75bcc8a2965628a856555dbe10a0d1f0cac916
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 11:00:02 2011 -0500
+
+    Renamed TelepathyQt4YellFarsight*.pc.in to TelepathyQt4YellFarstream*.pc.in
+
+ .../TelepathyQt4YellFarsight-uninstalled.pc.in     |   11 -----------
+ TelepathyQt4Yell/TelepathyQt4YellFarsight.pc.in    |   11 -----------
+ .../TelepathyQt4YellFarstream-uninstalled.pc.in    |   11 +++++++++++
+ TelepathyQt4Yell/TelepathyQt4YellFarstream.pc.in   |   11 +++++++++++
+ 4 files changed, 22 insertions(+), 22 deletions(-)
+
+commit 83f22cf5685017637a951e458e020a3066c6c973
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 10:39:49 2011 -0500
+
+    Added FindTelepathyFarstream.cmake (based on FindTelepathyFarsight.cmake)
+
+ cmake/modules/FindTelepathyFarstream.cmake |   49 ++++++++++++++++++++++++++++
+ 1 files changed, 49 insertions(+), 0 deletions(-)
+
+commit f8347116f43954ccaecb2e067261508ce432c910
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 10:39:16 2011 -0500
+
+    Renamed dir TelepathyQt4Yell/Farsight to TelepathyQt4Yell/Farstream
+
+ TelepathyQt4Yell/Farsight/CMakeLists.txt  |   58 --------------
+ TelepathyQt4Yell/Farsight/Channel         |   13 ---
+ TelepathyQt4Yell/Farsight/channel.cpp     |  121 -----------------------------
+ TelepathyQt4Yell/Farsight/channel.h       |   64 ---------------
+ TelepathyQt4Yell/Farsight/global.h        |   45 -----------
+ TelepathyQt4Yell/Farstream/CMakeLists.txt |   58 ++++++++++++++
+ TelepathyQt4Yell/Farstream/Channel        |   13 +++
+ TelepathyQt4Yell/Farstream/channel.cpp    |  121 +++++++++++++++++++++++++++++
+ TelepathyQt4Yell/Farstream/channel.h      |   64 +++++++++++++++
+ TelepathyQt4Yell/Farstream/global.h       |   45 +++++++++++
+ 10 files changed, 301 insertions(+), 301 deletions(-)
+
+commit bdd1bc8bae625acc0c42507442f263e2c89988a9
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Feb 1 10:31:04 2011 -0500
+
+    Conforming to style guide (HACKING)
+
+ TelepathyQt4Yell/Farsight/channel.cpp |   22 +++++++++++-----------
+ TelepathyQt4Yell/Farsight/channel.h   |    8 ++++----
+ 2 files changed, 15 insertions(+), 15 deletions(-)
+
+commit 90d760e180b0a96303b1906fb983a16895e80d8d
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 31 09:48:31 2011 -0500
+
+    Completed the async result callback function
+
+ TelepathyQt4Yell/Farsight/channel.cpp |   18 +++++++++++++++---
+ 1 files changed, 15 insertions(+), 3 deletions(-)
+
+commit 8a76613920661f72ba55eda655689e518b2c1669
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 31 05:04:30 2011 -0500
+
+    The moc files need to be included with cmake
+
+ TelepathyQt4Yell/Farsight/channel.cpp |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 8dfb19dd504bc8f81e53c41deaa7bdce7e40af01
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Jan 28 19:00:32 2011 -0500
+
+    Added cmakefiles for Telepathy Qt4 Yell Farsight
+
+ CMakeLists.txt                           |   27 +++++++++++++-
+ TelepathyQt4Yell/CMakeLists.txt          |    9 +++++
+ TelepathyQt4Yell/Farsight/CMakeLists.txt |   58 ++++++++++++++++++++++++++++++
+ 3 files changed, 92 insertions(+), 2 deletions(-)
+
+commit dccf51b04c3ee9c9c0d232b272c027714302b328
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Jan 28 19:00:09 2011 -0500
+
+    Added pc files for Telepathy Qt4 Yell Farsight
+
+ .../TelepathyQt4YellFarsight-uninstalled.pc.in     |   11 +++++++++++
+ TelepathyQt4Yell/TelepathyQt4YellFarsight.pc.in    |   11 +++++++++++
+ 2 files changed, 22 insertions(+), 0 deletions(-)
+
+commit 9b5f72d297046c8c5e3b24f005f6f5f6ced28073
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Jan 28 18:59:50 2011 -0500
+
+    Added code Telepathy Qt4 Yell Farsight lib
+    Similar to the function of Telepathy Qt4 Farsight, but for new Call Channel
+
+ TelepathyQt4Yell/Farsight/Channel     |   13 ++++
+ TelepathyQt4Yell/Farsight/channel.cpp |  107 +++++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/Farsight/channel.h   |   64 ++++++++++++++++++++
+ TelepathyQt4Yell/Farsight/global.h    |   45 ++++++++++++++
+ 4 files changed, 229 insertions(+), 0 deletions(-)
+
+commit 8f7fae42cd5969b014c5ee176c817c4370f1b89b
+Merge: 62fc5b6 b0d52fc
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 9 12:00:03 2011 -0200
+
+    Merge branch 'properties'
+    
+    Conflicts:
+    	TelepathyQt4Yell/call-channel.cpp
+    	TelepathyQt4Yell/call-channel.h
+
+commit 62fc5b6fb3321cf04103e95f91e864b84c8657c2
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 9 11:56:45 2011 -0200
+
+    CallChannel: Remove awaitingLocal/RemoveAnswer methods in favour of flags().
+
+ TelepathyQt4Yell/call-channel.cpp |   22 ----------------------
+ TelepathyQt4Yell/call-channel.h   |    3 ---
+ tests/dbus/call-chan.cpp          |    3 ---
+ 3 files changed, 0 insertions(+), 28 deletions(-)
+
+commit b0d52fcbfa4c7c0b7e2614adf1d60ede6af7a02a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 19:31:07 2011 -0200
+
+    CallChannel: Properly initialize properties.
+
+ TelepathyQt4Yell/call-channel.cpp |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 67876059da4043e3545bf97b6743cfd05acfba33
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 19:19:00 2011 -0200
+
+    CallChannel: Export CallStateReason/Details.
+
+ TelepathyQt4Yell/call-channel-internal.h |    2 +
+ TelepathyQt4Yell/call-channel.cpp        |   40 ++++++++++++++++++++++++++---
+ TelepathyQt4Yell/call-channel.h          |    2 +
+ 3 files changed, 39 insertions(+), 5 deletions(-)
+
+commit b96a3b82fcce982a41a08e9409459c3d91316093
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 19:18:36 2011 -0200
+
+    CallChannel: Fixed doc for contentAdded/Removed.
+
+ TelepathyQt4Yell/call-channel.cpp |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit d50e4ebaff96bf7fb3051e503cbf46c9bfaf5d7b
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 19:07:04 2011 -0200
+
+    CallChannel: Handle CallStateChanged.
+
+ TelepathyQt4Yell/call-channel.cpp |   26 ++++++++++++++++++++++++++
+ TelepathyQt4Yell/call-channel.h   |    3 +++
+ 2 files changed, 29 insertions(+), 0 deletions(-)
+
+commit 1ab6f7d3ec8bddf65b0c210d44d5972d3e000c88
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 18:57:21 2011 -0200
+
+    CallChannel: Bind Call.CallState/CallFlags/InitialTransport/InitialAudio/InitialVideo/InitialAudioName/InitialVideoName/MutableContents.
+
+ TelepathyQt4Yell/call-channel-internal.h |    8 +++
+ TelepathyQt4Yell/call-channel.cpp        |   97 +++++++++++++++++++++++++++++-
+ TelepathyQt4Yell/call-channel.h          |    8 +++
+ 3 files changed, 111 insertions(+), 2 deletions(-)
+
+commit 8ecc32935f747c9c220e670baaf1f651cfc470b2
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 18:57:00 2011 -0200
+
+    Auto-generate code for all Call interfaces.
+
+ TelepathyQt4Yell/channel.xml |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit c788d501839a99168cd6f4dcdb69ce04235ba616
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Feb 2 12:17:17 2011 -0200
+
+    CallContent: Bind Content.Disposition.
+
+ TelepathyQt4Yell/call-channel-internal.h |    1 +
+ TelepathyQt4Yell/call-channel.cpp        |   13 +++++++++++--
+ TelepathyQt4Yell/call-channel.h          |    2 ++
+ 3 files changed, 14 insertions(+), 2 deletions(-)
+
+commit d5f326ed1dccca4a7b032db84e785d7e8a665b3f
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Tue Feb 1 12:05:16 2011 -0300
+
+    CallChannel: Fixed documentation to properly link to header file.
+
+ TelepathyQt4Yell/call-channel.cpp |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 71a7d4eee540e659b5d19c99f7de22e7f98a7e7a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:59:31 2011 -0200
+
+    Start 0.1.1 development
+
+ CMakeLists.txt |    2 +-
+ NEWS           |   11 +++++++++++
+ 2 files changed, 12 insertions(+), 1 deletions(-)
+
+commit ae6ac3049fbb0f9ccfd13d900f4bf1c77a7f9510
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:43:33 2011 -0200
+
+    Prepare release 0.1.0
+
+ CMakeLists.txt |    6 +++---
+ NEWS           |   11 +++++------
+ 2 files changed, 8 insertions(+), 9 deletions(-)
+
+commit c6c186d2e8c49a6aea1faa272395f19e97bf64a7
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:52:41 2011 -0200
+
+    Install PendingCallContent header.
+
+ TelepathyQt4Yell/CMakeLists.txt |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 23225baa9b76fa9d678c95c35fda1f3ad50d499f
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:36:37 2011 -0200
+
+    Link development builds with -Wl,--no-add-needed
+    
+    This increases forwards compatibility with distros using gold as the linker or otherwise using
+    --no-add-needed/--no-copy-dt-needed-entries.
+
+ CMakeLists.txt                        |    1 +
+ cmake/modules/FindDBusGLib.cmake      |   48 +++++++++++++++++++++++++++++++++
+ cmake/modules/TelepathyDefaults.cmake |    8 +++++
+ tests/lib/glib/call/CMakeLists.txt    |    3 ++
+ 4 files changed, 60 insertions(+), 0 deletions(-)
+
+commit 83862f5d56ee655d1c797fcbf9c1312704261d51
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:32:58 2011 -0200
+
+    Fix Werror etc disable mechanism to check for a release version number directly.
+
+ cmake/modules/TelepathyDefaults.cmake |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 61c17867c7a7f99c6f4f242be0b8d131d9c64dbd
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Mon Jan 31 13:29:38 2011 -0200
+
+    Fix linking with tp-qt4 in Models.
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |    3 +--
+ 1 files changed, 1 insertions(+), 2 deletions(-)
+
+commit 3c7f0402fd6a8491d6b56276424c913bb9daf78e
+Author: George Kiagiadakis <george.kiagiadakis@collabora.co.uk>
+Date:   Mon Jan 31 16:17:10 2011 +0200
+
+    Fix linking with tp-qt4 in the tests.
+
+ cmake/modules/TpQt4Macros.cmake |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 33053f67a754a100e17823461dc481c73a287515
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Jan 31 07:00:32 2011 -0800
+
+    Only add new contact item if it does not already exist
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |   31 +++++++++++++++-------
+ 1 files changed, 21 insertions(+), 10 deletions(-)
+
+commit 20a90312e2aa946703187c1befe4299872709b69
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 14:09:43 2011 -0200
+
+    CallChannel: Removed static methods to return ChannelClassSpec and register with factory in favor of Tpy::ChannelClassSpec/ChannelFactory.
+
+ TelepathyQt4Yell/call-channel.cpp |   73 -------------------------------------
+ TelepathyQt4Yell/call-channel.h   |   11 ------
+ tests/dbus/call-chan.cpp          |    7 ++--
+ 3 files changed, 3 insertions(+), 88 deletions(-)
+
+commit b39c2ebb56a0e2f6d9128ac26d586fdf210649cc
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 14:06:27 2011 -0200
+
+    Added ChannelFactory.
+    
+    Inherits Tp::ChannelFactory and adds Call support.
+
+ TelepathyQt4Yell/CMakeLists.txt      |    3 +
+ TelepathyQt4Yell/ChannelFactory      |   13 ++++++
+ TelepathyQt4Yell/channel-factory.cpp |   79 ++++++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/channel-factory.h   |   62 ++++++++++++++++++++++++++
+ TelepathyQt4Yell/types.h             |    2 +
+ 5 files changed, 159 insertions(+), 0 deletions(-)
+
+commit 9886a4b7964d3372a5f7b42208357b2de950171a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 14:05:25 2011 -0200
+
+    Added ChannelClassSpec.
+    
+    Inherits Tp::ChannelClassSpec and adds Call support.
+
+ TelepathyQt4Yell/CMakeLists.txt         |    3 +
+ TelepathyQt4Yell/ChannelClassSpec       |   13 +++
+ TelepathyQt4Yell/channel-class-spec.cpp |  128 +++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/channel-class-spec.h   |   97 +++++++++++++++++++++++
+ 4 files changed, 241 insertions(+), 0 deletions(-)
+
+commit e1ec220e0fc521b8f99bf76320d03bdcc9464199
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 12:25:18 2011 -0200
+
+    Models/ConversationModel: Fixed header guard.
+
+ TelepathyQt4Yell/Models/ConversationModel |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 5718100e5ea1cd1b17a4e8c09195b26fed063118
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 12:24:52 2011 -0200
+
+    Remove commented code and fixed comment.
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |   10 +++-------
+ 1 files changed, 3 insertions(+), 7 deletions(-)
+
+commit 12c36f154eacb9aa062e929fa692e23dd99526de
+Merge: 13d4ade ffc573d
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 28 12:12:48 2011 -0200
+
+    Merge remote branch 'boiko/models'
+
+commit ffc573d7f82ac097e97c015ba4874bf413687221
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Jan 26 13:12:52 2011 -0800
+
+    Do not add known contacts on construction of the account model item, because the required signals are not in place to add the contact items
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    4 +---
+ 1 files changed, 1 insertions(+), 3 deletions(-)
+
+commit 9bf71cff7a4ab6773c0be0722cf8975a93d56d52
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Jan 26 13:11:46 2011 -0800
+
+    Use the current contact signals, not the deprecated ones
+
+ TelepathyQt4Yell/Models/contact-model-item.cpp |    8 +++-----
+ 1 files changed, 3 insertions(+), 5 deletions(-)
+
+commit aa1df4092be5d8bf96e5b634a615b9fe01c2a346
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Tue Jan 25 08:54:09 2011 -0800
+
+    Renamed setPresence to SetRequestedPresence and add setAutomaticPresence to AccountModelItem
+
+ TelepathyQt4Yell/Models/accounts-model-item.cpp |    9 ++++++++-
+ TelepathyQt4Yell/Models/accounts-model-item.h   |    3 ++-
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+
+commit 24b212580f638c05bfd7d75034594129153ab92d
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Jan 24 09:12:01 2011 -0800
+
+    Added FileTransferCapabilityRole to ContactModelItem
+
+ TelepathyQt4Yell/Models/accounts-model.cpp     |    1 +
+ TelepathyQt4Yell/Models/accounts-model.h       |    1 +
+ TelepathyQt4Yell/Models/contact-model-item.cpp |    9 +++++++++
+ 3 files changed, 11 insertions(+), 0 deletions(-)
+
+commit d9824928fa8232d65e004cb5b5e9e392d49917fa
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Jan 20 05:41:33 2011 -0800
+
+    Rename libtelepathy-qt4-models to libtelepathy-qt4-yell-models
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit 7b0d7bbfc972eef626eb42ac0b60ef0901f46b75
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Tue Jan 18 06:44:43 2011 -0800
+
+    Skip message delivery reports in conversation model
+
+ TelepathyQt4Yell/Models/conversation-model.cpp |   11 +++++++----
+ 1 files changed, 7 insertions(+), 4 deletions(-)
+
+commit 4f40b65fb01935530e799af1ec1f6b9db972f62f
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue Jan 18 03:58:07 2011 -0800
+
+    Build the models library static
+
+ TelepathyQt4Yell/Models/CMakeLists.txt |   17 +++++++++++------
+ 1 files changed, 11 insertions(+), 6 deletions(-)
+
+commit 20a3b955c0fa5e1cc087fb44805bd999f32a6a77
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Jan 14 05:59:16 2011 -0800
+
+    Change defines and namespace to the yell ones
+
+ TelepathyQt4Yell/Models/AccountsModel             |   12 +++---
+ TelepathyQt4Yell/Models/AccountsModelItem         |   12 +++---
+ TelepathyQt4Yell/Models/AvatarImageProvider       |   12 +++---
+ TelepathyQt4Yell/Models/CMakeLists.txt            |    4 +-
+ TelepathyQt4Yell/Models/ContactModelItem          |   12 +++---
+ TelepathyQt4Yell/Models/ConversationItem          |   12 +++---
+ TelepathyQt4Yell/Models/ConversationModel         |    6 +-
+ TelepathyQt4Yell/Models/FlatModelProxy            |   12 +++---
+ TelepathyQt4Yell/Models/Global                    |   12 +++---
+ TelepathyQt4Yell/Models/TreeNode                  |   12 +++---
+ TelepathyQt4Yell/Models/accounts-model-item.cpp   |   46 ++++++++++----------
+ TelepathyQt4Yell/Models/accounts-model-item.h     |   18 ++++----
+ TelepathyQt4Yell/Models/accounts-model.cpp        |    8 ++--
+ TelepathyQt4Yell/Models/accounts-model.h          |   16 ++++----
+ TelepathyQt4Yell/Models/avatar-image-provider.cpp |   12 +++---
+ TelepathyQt4Yell/Models/avatar-image-provider.h   |   20 +++++-----
+ TelepathyQt4Yell/Models/contact-model-item.cpp    |    8 ++--
+ TelepathyQt4Yell/Models/contact-model-item.h      |   18 ++++----
+ TelepathyQt4Yell/Models/conversation-item.cpp     |   12 +++---
+ TelepathyQt4Yell/Models/conversation-item.h       |   18 ++++----
+ TelepathyQt4Yell/Models/conversation-model.cpp    |   16 ++++----
+ TelepathyQt4Yell/Models/conversation-model.h      |   18 ++++----
+ TelepathyQt4Yell/Models/flat-model-proxy.cpp      |    4 +-
+ TelepathyQt4Yell/Models/flat-model-proxy.h        |   14 +++---
+ TelepathyQt4Yell/Models/global.h                  |   20 +++++-----
+ TelepathyQt4Yell/Models/tree-node.cpp             |    4 +-
+ TelepathyQt4Yell/Models/tree-node.h               |   14 +++---
+ 27 files changed, 186 insertions(+), 186 deletions(-)
+
+commit e6de2bfb410722330de35bc9799d535d6b6ca357
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Jan 14 05:11:30 2011 -0800
+
+    Move the models to the TelepathyQt4Yell directory
+
+ TelepathyQt4/Models/AccountsModel                 |   13 -
+ TelepathyQt4/Models/AccountsModelItem             |   13 -
+ TelepathyQt4/Models/AvatarImageProvider           |   13 -
+ TelepathyQt4/Models/CMakeLists.txt                |   84 -----
+ TelepathyQt4/Models/ContactModelItem              |   13 -
+ TelepathyQt4/Models/ConversationItem              |   13 -
+ TelepathyQt4/Models/ConversationModel             |   14 -
+ TelepathyQt4/Models/FlatModelProxy                |   14 -
+ TelepathyQt4/Models/Global                        |   13 -
+ TelepathyQt4/Models/TreeNode                      |   13 -
+ TelepathyQt4/Models/accounts-model-item.cpp       |  359 ---------------------
+ TelepathyQt4/Models/accounts-model-item.h         |   81 -----
+ TelepathyQt4/Models/accounts-model.cpp            |  289 -----------------
+ TelepathyQt4/Models/accounts-model.h              |  130 --------
+ TelepathyQt4/Models/avatar-image-provider.cpp     |   72 ----
+ TelepathyQt4/Models/avatar-image-provider.h       |   59 ----
+ TelepathyQt4/Models/contact-model-item.cpp        |  176 ----------
+ TelepathyQt4/Models/contact-model-item.h          |   60 ----
+ TelepathyQt4/Models/conversation-item.cpp         |   84 -----
+ TelepathyQt4/Models/conversation-item.h           |   67 ----
+ TelepathyQt4/Models/conversation-model.cpp        |  220 -------------
+ TelepathyQt4/Models/conversation-model.h          |   91 ------
+ TelepathyQt4/Models/flat-model-proxy.cpp          |  186 -----------
+ TelepathyQt4/Models/flat-model-proxy.h            |   72 ----
+ TelepathyQt4/Models/global.h                      |   45 ---
+ TelepathyQt4/Models/tree-node.cpp                 |  127 --------
+ TelepathyQt4/Models/tree-node.h                   |   73 -----
+ TelepathyQt4Yell/CMakeLists.txt                   |    2 +
+ TelepathyQt4Yell/Models/AccountsModel             |   13 +
+ TelepathyQt4Yell/Models/AccountsModelItem         |   13 +
+ TelepathyQt4Yell/Models/AvatarImageProvider       |   13 +
+ TelepathyQt4Yell/Models/CMakeLists.txt            |   84 +++++
+ TelepathyQt4Yell/Models/ContactModelItem          |   13 +
+ TelepathyQt4Yell/Models/ConversationItem          |   13 +
+ TelepathyQt4Yell/Models/ConversationModel         |   14 +
+ TelepathyQt4Yell/Models/FlatModelProxy            |   14 +
+ TelepathyQt4Yell/Models/Global                    |   13 +
+ TelepathyQt4Yell/Models/TreeNode                  |   13 +
+ TelepathyQt4Yell/Models/accounts-model-item.cpp   |  357 ++++++++++++++++++++
+ TelepathyQt4Yell/Models/accounts-model-item.h     |   81 +++++
+ TelepathyQt4Yell/Models/accounts-model.cpp        |  287 ++++++++++++++++
+ TelepathyQt4Yell/Models/accounts-model.h          |  130 ++++++++
+ TelepathyQt4Yell/Models/avatar-image-provider.cpp |   72 ++++
+ TelepathyQt4Yell/Models/avatar-image-provider.h   |   59 ++++
+ TelepathyQt4Yell/Models/contact-model-item.cpp    |  176 ++++++++++
+ TelepathyQt4Yell/Models/contact-model-item.h      |   60 ++++
+ TelepathyQt4Yell/Models/conversation-item.cpp     |   84 +++++
+ TelepathyQt4Yell/Models/conversation-item.h       |   67 ++++
+ TelepathyQt4Yell/Models/conversation-model.cpp    |  220 +++++++++++++
+ TelepathyQt4Yell/Models/conversation-model.h      |   91 ++++++
+ TelepathyQt4Yell/Models/flat-model-proxy.cpp      |  186 +++++++++++
+ TelepathyQt4Yell/Models/flat-model-proxy.h        |   72 ++++
+ TelepathyQt4Yell/Models/global.h                  |   45 +++
+ TelepathyQt4Yell/Models/tree-node.cpp             |  127 ++++++++
+ TelepathyQt4Yell/Models/tree-node.h               |   73 +++++
+ 55 files changed, 2392 insertions(+), 2394 deletions(-)
+
+commit 6ef2d0729ecf97fcc4b6f967e75e86732de32af7
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Jan 12 09:27:06 2011 -0800
+
+    Add some tests for the models, still far from complete though
+
+ TelepathyQt4/Models/CMakeLists.txt   |    1 +
+ tests/dbus/accounts-model-basics.cpp |  285 ++++++++++++++++++++++++++++++++++
+ 2 files changed, 286 insertions(+), 0 deletions(-)
+
+commit 755773abe2afbd27fea85a5c32c89c8534c8229c
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Jan 12 09:26:21 2011 -0800
+
+    Print the correct indexes in the debug
+
+ TelepathyQt4/Models/accounts-model.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 19693dc99be59d24013e1d83d8a1fa965e490648
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue Jan 11 10:44:15 2011 -0800
+
+    Don't try to remove the root node from its (null) parent
+
+ TelepathyQt4/Models/tree-node.cpp |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit 29dad240e92d872cf8b314b0610728904012d39f
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 16:42:05 2011 -0200
+
+    Models/ConversationItem: Coding style fix when defining namespace Tp.
+
+ TelepathyQt4/Models/conversation-item.cpp |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 57ff0994ba768ccc0784d912a3b1fa2a73a960de
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 16:04:47 2011 -0200
+
+    Models binding: Fixed some header guard names.
+
+ TelepathyQt4/Models/accounts-model-item.h |    6 +++---
+ TelepathyQt4/Models/accounts-model.h      |    6 +++---
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit cff2d15d4f57a9da609ea8662ba613f6da717ce2
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 15:58:26 2011 -0200
+
+    Models binding: Use the EXPORT macros from TelepathyQt4/Models/Global and follow coding style for header inclusions.
+    
+    TelepathyQt4/Models specific includes
+    TelepathyQt4 specific includes
+    Qt specific includes
+    system specific includes
+    
+    All ordered alphabetically.
+
+ TelepathyQt4/Models/CMakeLists.txt            |    5 +++++
+ TelepathyQt4/Models/accounts-model-item.cpp   |   10 +++++-----
+ TelepathyQt4/Models/accounts-model-item.h     |    4 ++--
+ TelepathyQt4/Models/accounts-model.cpp        |    9 +++++----
+ TelepathyQt4/Models/accounts-model.h          |    8 ++++----
+ TelepathyQt4/Models/avatar-image-provider.cpp |    2 +-
+ TelepathyQt4/Models/avatar-image-provider.h   |    8 +++++---
+ TelepathyQt4/Models/contact-model-item.cpp    |   10 +++++-----
+ TelepathyQt4/Models/contact-model-item.h      |    2 +-
+ TelepathyQt4/Models/conversation-item.cpp     |    4 ++--
+ TelepathyQt4/Models/conversation-item.h       |    7 +++++--
+ TelepathyQt4/Models/conversation-model.cpp    |    8 ++++----
+ TelepathyQt4/Models/conversation-model.h      |    9 ++++++---
+ TelepathyQt4/Models/flat-model-proxy.cpp      |    2 +-
+ TelepathyQt4/Models/flat-model-proxy.h        |    5 +++--
+ TelepathyQt4/Models/tree-node.cpp             |    2 +-
+ TelepathyQt4/Models/tree-node.h               |    5 +++--
+ 17 files changed, 58 insertions(+), 42 deletions(-)
+
+commit 6bdfd8d33c66b039c7c496db7bec9fc4d070470c
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 15:33:10 2011 -0200
+
+    Models binding: Introduce TELEPATHY_QT4_MODELS_EXPORT, TELEPATHY_QT4_MODELS_NO_EXPORT macros.
+    
+    Quote from commit f7ec4302:
+    Because Windows distinguishes between Q_DECL_EXPORT and Q_DECL_IMPORT,
+    we need one macro like this per shared library - telepathy-qt4-models
+    needs to export its own symbols with Q_DECL_EXPORT, while importing
+    telepathy-qt4's symbols with Q_DECL_IMPORT.
+
+ TelepathyQt4/Models/CMakeLists.txt |    2 +
+ TelepathyQt4/Models/Global         |   13 ++++++++++
+ TelepathyQt4/Models/global.h       |   45 ++++++++++++++++++++++++++++++++++++
+ 3 files changed, 60 insertions(+), 0 deletions(-)
+
+commit effdc3e6fb4e46abb08cea849ad8cd035b2e2471
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 15:27:19 2011 -0200
+
+    Models binding: Added TreeNode fancy header.
+
+ TelepathyQt4/Models/CMakeLists.txt        |    1 +
+ TelepathyQt4/Models/TreeNode              |   13 +++++++++++++
+ TelepathyQt4/Models/accounts-model-item.h |    2 +-
+ TelepathyQt4/Models/contact-model-item.h  |    2 +-
+ TelepathyQt4/Models/tree-node.cpp         |    2 +-
+ TelepathyQt4/Models/tree-node.h           |    4 ++++
+ 6 files changed, 21 insertions(+), 3 deletions(-)
+
+commit 43d1a1c4f59756dcb36ee692c7f1a971a644a213
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 15:08:32 2011 -0200
+
+    Models binding: Renamed header guards for consistency.
+
+ TelepathyQt4/Models/AccountsModel           |    6 +++---
+ TelepathyQt4/Models/AccountsModelItem       |    6 +++---
+ TelepathyQt4/Models/AvatarImageProvider     |    6 +++---
+ TelepathyQt4/Models/ContactModelItem        |    6 +++---
+ TelepathyQt4/Models/ConversationItem        |    6 +++---
+ TelepathyQt4/Models/FlatModelProxy          |    6 +++---
+ TelepathyQt4/Models/accounts-model-item.h   |    6 +++---
+ TelepathyQt4/Models/accounts-model.h        |    6 +++---
+ TelepathyQt4/Models/avatar-image-provider.h |    6 +++---
+ TelepathyQt4/Models/contact-model-item.h    |    6 +++---
+ TelepathyQt4/Models/conversation-item.h     |    6 +++---
+ TelepathyQt4/Models/conversation-model.h    |    6 +++---
+ TelepathyQt4/Models/flat-model-proxy.h      |    6 +++---
+ TelepathyQt4/Models/tree-node.h             |    6 +++---
+ 14 files changed, 42 insertions(+), 42 deletions(-)
+
+commit da3370a49283beed43e747b6b7e55de6d38882d8
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Wed Jan 5 14:47:52 2011 -0200
+
+    Models binding: Renamed TelepathyQt4/models to TelepathyQt4/Models for consistency.
+
+ TelepathyQt4/Models/AccountsModel               |   13 +
+ TelepathyQt4/Models/AccountsModelItem           |   13 +
+ TelepathyQt4/Models/AvatarImageProvider         |   13 +
+ TelepathyQt4/Models/CMakeLists.txt              |   75 +++++
+ TelepathyQt4/Models/ContactModelItem            |   13 +
+ TelepathyQt4/Models/ConversationItem            |   13 +
+ TelepathyQt4/Models/ConversationModel           |   14 +
+ TelepathyQt4/Models/FlatModelProxy              |   14 +
+ TelepathyQt4/Models/accounts-model-item.cpp     |  359 +++++++++++++++++++++++
+ TelepathyQt4/Models/accounts-model-item.h       |   81 +++++
+ TelepathyQt4/Models/accounts-model.cpp          |  288 ++++++++++++++++++
+ TelepathyQt4/Models/accounts-model.h            |  130 ++++++++
+ TelepathyQt4/Models/avatar-image-provider.cpp   |   72 +++++
+ TelepathyQt4/Models/avatar-image-provider.h     |   57 ++++
+ TelepathyQt4/Models/contact-model-item.cpp      |  176 +++++++++++
+ TelepathyQt4/Models/contact-model-item.h        |   60 ++++
+ TelepathyQt4/Models/conversation-item.cpp       |   83 ++++++
+ TelepathyQt4/Models/conversation-item.h         |   64 ++++
+ TelepathyQt4/Models/conversation-model.cpp      |  220 ++++++++++++++
+ TelepathyQt4/Models/conversation-model.h        |   88 ++++++
+ TelepathyQt4/Models/flat-model-proxy.cpp        |  186 ++++++++++++
+ TelepathyQt4/Models/flat-model-proxy.h          |   71 +++++
+ TelepathyQt4/Models/tree-node.cpp               |  125 ++++++++
+ TelepathyQt4/Models/tree-node.h                 |   68 +++++
+ TelepathyQt4/models/AccountsModel               |   13 -
+ TelepathyQt4/models/AccountsModelItem           |   13 -
+ TelepathyQt4/models/AvatarImageProvider         |   13 -
+ TelepathyQt4/models/CMakeLists.txt              |   75 -----
+ TelepathyQt4/models/ContactModelItem            |   13 -
+ TelepathyQt4/models/ConversationItem            |   13 -
+ TelepathyQt4/models/ConversationModel           |   14 -
+ TelepathyQt4/models/FlatModelProxy              |   14 -
+ TelepathyQt4/models/accounts-model-item.cpp     |  359 -----------------------
+ TelepathyQt4/models/accounts-model-item.h       |   81 -----
+ TelepathyQt4/models/accounts-model.cpp          |  288 ------------------
+ TelepathyQt4/models/accounts-model.h            |  130 --------
+ TelepathyQt4/models/avatar-image-provider.cpp   |   72 -----
+ TelepathyQt4/models/avatar-image-provider.h     |   57 ----
+ TelepathyQt4/models/contact-model-item.cpp      |  176 -----------
+ TelepathyQt4/models/contact-model-item.h        |   60 ----
+ TelepathyQt4/models/conversation-item.cpp       |   83 ------
+ TelepathyQt4/models/conversation-item.h         |   64 ----
+ TelepathyQt4/models/conversation-model.cpp      |  220 --------------
+ TelepathyQt4/models/conversation-model.h        |   88 ------
+ TelepathyQt4/models/flat-model-proxy.cpp        |  186 ------------
+ TelepathyQt4/models/flat-model-proxy.h          |   71 -----
+ TelepathyQt4/models/tree-node.cpp               |  125 --------
+ TelepathyQt4/models/tree-node.h                 |   68 -----
+ examples/accounts-model/accountwindow.cpp       |    4 +-
+ examples/accounts-model/accountwindow.h         |    2 +-
+ examples/accounts-model/telepathy-initializer.h |    2 +-
+ examples/accounts-model/tree-view.cpp           |    2 +-
+ examples/accounts-model/tree-view.h             |    2 +-
+ examples/conversation-model/chatwindow.h        |    2 +-
+ 54 files changed, 2303 insertions(+), 2303 deletions(-)
+
+commit 11911bb642af2ea174e94b5749b0e2cb8c076741
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue Jan 4 12:10:06 2011 -0800
+
+    Expose the conversation item so that custom items are accessible through a model interface
+
+ TelepathyQt4/models/conversation-model.cpp |   15 +++++++++++++++
+ TelepathyQt4/models/conversation-model.h   |    6 +++++-
+ 2 files changed, 20 insertions(+), 1 deletions(-)
+
+commit ae2b4b0f0422fe25901fc09356ccd1613412843a
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Jan 4 13:00:00 2011 -0500
+
+    Remove void in method arguments, not needed in C++
+
+ TelepathyQt4/models/accounts-model-item.h |    4 ++--
+ TelepathyQt4/models/conversation-model.h  |    4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit cb5f08c50e51293801f4002f3bf3f700aad7064f
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Jan 4 07:29:04 2011 -0500
+
+    setStatus and setStatusMessage are not exposed anymore in AccountsModelItem
+
+ TelepathyQt4/models/accounts-model-item.cpp |   35 ++++++++++++++------------
+ TelepathyQt4/models/accounts-model-item.h   |    4 ---
+ 2 files changed, 19 insertions(+), 20 deletions(-)
+
+commit 523bd9396998248768ae5431f7ba79205698e3f3
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 3 10:04:40 2011 -0500
+
+    Used Presence instead of SimplePresence
+
+ TelepathyQt4/models/accounts-model-item.cpp |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 5481ac4c5c200fc069716aa9c3d723bf4fc98d52
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 3 10:04:15 2011 -0500
+
+    Fixed typo in "requestedStatusMessage" role
+
+ TelepathyQt4/models/accounts-model.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit ac7059030a89d584d208fab0633d8ba7a08109ad
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 3 10:04:04 2011 -0500
+
+    Added automatic presence status type and status message for completeness
+
+ TelepathyQt4/models/accounts-model-item.cpp |    4 ++++
+ TelepathyQt4/models/accounts-model.cpp      |    4 +++-
+ TelepathyQt4/models/accounts-model.h        |    2 ++
+ 3 files changed, 9 insertions(+), 1 deletions(-)
+
+commit e6ea726d201f69c3aa0816a58f17ca2616f2679c
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Jan 3 10:02:21 2011 -0500
+
+    refactored refreshKnownContacts into clearContacts and addKnownContacts Dont connect twice to ConnectionChanged signal whitespaces following style guide (HACKING) Fixed bug in clearContacts (removed break in for loop)
+
+ TelepathyQt4/models/accounts-model-item.cpp |   47 ++++++++++++++++-----------
+ TelepathyQt4/models/accounts-model-item.h   |    4 +-
+ TelepathyQt4/models/conversation-model.cpp  |    4 +-
+ 3 files changed, 32 insertions(+), 23 deletions(-)
+
+commit 4a1659a9565dfa8eeac3561158e53bfdaa37bf73
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Dec 29 09:34:11 2010 +0100
+
+    Normalized signal and slot names
+
+ TelepathyQt4/models/accounts-model-item.cpp |   24 ++++++++++++------------
+ TelepathyQt4/models/accounts-model.cpp      |   24 ++++++++++++------------
+ TelepathyQt4/models/contact-model-item.cpp  |   21 ++++++++++-----------
+ TelepathyQt4/models/conversation-model.cpp  |   13 ++++++-------
+ TelepathyQt4/models/flat-model-proxy.cpp    |   24 ++++++++++++------------
+ TelepathyQt4/models/tree-node.cpp           |   24 ++++++++++++------------
+ 6 files changed, 64 insertions(+), 66 deletions(-)
+
+commit 3cff2f741eadc35d7e43f44b6b643866342845bd
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 08:21:50 2010 +0100
+
+    Fixed use of tp debug internal instead of qDebug()
+
+ TelepathyQt4/models/accounts-model-item.cpp |    7 ++++---
+ TelepathyQt4/models/accounts-model.cpp      |    3 ++-
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+
+commit e6fce008f0fba9b7d30be1be219007c13fdcdf86
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 08:04:47 2010 +0100
+
+    Added Private class to FlatModelProxy
+
+ TelepathyQt4/models/flat-model-proxy.cpp |   46 ++++++++++++++++++-----------
+ TelepathyQt4/models/flat-model-proxy.h   |    5 ++-
+ 2 files changed, 32 insertions(+), 19 deletions(-)
+
+commit 371b5fae4d8fcc3ea5336e3feef70c72660c05c9
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 07:46:38 2010 +0100
+
+    Removed whitespaces (HACKING)
+
+ TelepathyQt4/models/avatar-image-provider.h |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit ebbac96372e169f8ff874772cecf0d8cd558bbca
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 07:44:00 2010 +0100
+
+    Moved private method to pimpl class in AccountModel Removed not defined private methods rowOf, contactManager
+
+ TelepathyQt4/models/accounts-model.cpp |   28 +++++++++++++++-------------
+ TelepathyQt4/models/accounts-model.h   |    4 ----
+ 2 files changed, 15 insertions(+), 17 deletions(-)
+
+commit 70e0e3e5a57d973b19cd8fdfeffaf52b5724d262
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 07:30:40 2010 +0100
+
+    Removed some whitespaces (HACKING)
+
+ TelepathyQt4/models/flat-model-proxy.h |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+commit a0caa0021bae3e7dabbcb0cd4429052c9f6d8096
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Dec 28 07:30:00 2010 +0100
+
+    Added private class for TreeNode Fixed AccountsModelItem due to pimpling TreeNode
+
+ TelepathyQt4/models/accounts-model-item.cpp |    8 ++--
+ TelepathyQt4/models/tree-node.cpp           |   47 +++++++++++++++++----------
+ TelepathyQt4/models/tree-node.h             |    8 ++--
+ 3 files changed, 38 insertions(+), 25 deletions(-)
+
+commit cbe9ed901a93875c76a8f26175d426e36bb5cea3
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:55:49 2010 +0100
+
+    Added private class for ConversationModel Added accessor to self contact for ConversationModel
+
+ TelepathyQt4/models/conversation-model.cpp |   57 ++++++++++++++++++----------
+ TelepathyQt4/models/conversation-model.h   |   11 +++--
+ 2 files changed, 44 insertions(+), 24 deletions(-)
+
+commit d3cda762f3445ec470936bc29458f48f3576c997
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:40:26 2010 +0100
+
+    Added Private class for ConversationItem
+
+ TelepathyQt4/models/conversation-item.cpp |   34 +++++++++++++++++++++-------
+ TelepathyQt4/models/conversation-item.h   |    8 ++----
+ 2 files changed, 28 insertions(+), 14 deletions(-)
+
+commit ffc9e6828f692f45efcdc3e2b8871285bbf5621a
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:32:03 2010 +0100
+
+    Added private class for ContactModelItem
+
+ TelepathyQt4/models/contact-model-item.cpp |   63 ++++++++++++++++++----------
+ TelepathyQt4/models/contact-model-item.h   |    9 ++--
+ 2 files changed, 46 insertions(+), 26 deletions(-)
+
+commit 34527da44d9ee97a98a7816c41e7b6d8c9630ccd
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:14:19 2010 +0100
+
+    Added private class for AvatarImageProvider
+
+ TelepathyQt4/models/avatar-image-provider.cpp |   20 +++++++++++++++++---
+ TelepathyQt4/models/avatar-image-provider.h   |    6 ++++--
+ 2 files changed, 21 insertions(+), 5 deletions(-)
+
+commit 1c054a80c735d27ceda4153d6d90ccf9ce8f9a99
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:09:05 2010 +0100
+
+    Added private class for AccountsModel
+
+ TelepathyQt4/models/accounts-model.cpp |   40 ++++++++++++++++++++-----------
+ TelepathyQt4/models/accounts-model.h   |    8 +++---
+ 2 files changed, 30 insertions(+), 18 deletions(-)
+
+commit 0efc1076c9221f9573b44c646289956a3fc83ab8
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 03:00:26 2010 +0100
+
+    Added private class for AccountsModelItem
+
+ TelepathyQt4/models/accounts-model-item.cpp |  128 +++++++++++++++-----------
+ TelepathyQt4/models/accounts-model-item.h   |    7 +-
+ 2 files changed, 79 insertions(+), 56 deletions(-)
+
+commit 00d8a1ccf688a8d04f92cbe416bc3bbd28dd2f64
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 02:14:25 2010 +0100
+
+    Disable copying for all classes (HACKING)
+
+ TelepathyQt4/models/accounts-model-item.h   |    1 +
+ TelepathyQt4/models/accounts-model.h        |    1 +
+ TelepathyQt4/models/avatar-image-provider.h |    1 +
+ TelepathyQt4/models/contact-model-item.h    |    1 +
+ TelepathyQt4/models/conversation-item.h     |    1 +
+ TelepathyQt4/models/conversation-model.h    |    1 +
+ TelepathyQt4/models/flat-model-proxy.h      |    1 +
+ TelepathyQt4/models/tree-node.h             |    2 ++
+ 8 files changed, 9 insertions(+), 0 deletions(-)
+
+commit 0694523895796b348ec48f905210bb3d2468dde1
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Mon Dec 27 01:38:57 2010 +0100
+
+    Fixed more whitespaces (HACKING)
+
+ TelepathyQt4/models/accounts-model-item.cpp |    2 +-
+ TelepathyQt4/models/accounts-model-item.h   |    1 -
+ TelepathyQt4/models/accounts-model.cpp      |    6 ++----
+ TelepathyQt4/models/contact-model-item.cpp  |    2 +-
+ TelepathyQt4/models/conversation-model.cpp  |    1 -
+ TelepathyQt4/models/tree-node.cpp           |    5 +++--
+ 6 files changed, 7 insertions(+), 10 deletions(-)
+
+commit ff9eb1a3de9501bc1bdaf590bfb39eaaa6e7e646
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Sun Dec 26 11:13:56 2010 +0100
+
+    Fixed whitespaces (HACKING)
+
+ TelepathyQt4/models/accounts-model-item.cpp |    2 +-
+ TelepathyQt4/models/accounts-model-item.h   |    2 +-
+ TelepathyQt4/models/accounts-model.cpp      |    4 ++--
+ TelepathyQt4/models/accounts-model.h        |    2 +-
+ TelepathyQt4/models/conversation-model.cpp  |    2 +-
+ TelepathyQt4/models/conversation-model.h    |    2 +-
+ TelepathyQt4/models/tree-node.h             |    2 +-
+ 7 files changed, 8 insertions(+), 8 deletions(-)
+
+commit a60017486bdc2a0c9640890d8c9abbce3ef6575c
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Sun Dec 26 10:53:06 2010 +0100
+
+    Added space after keyword (HACKING)
+
+ TelepathyQt4/models/accounts-model-item.cpp |   12 ++++++------
+ 1 files changed, 6 insertions(+), 6 deletions(-)
+
+commit fc902190fb2133fed4f949dd27d3c193082b7a7f
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Sun Dec 26 10:44:18 2010 +0100
+
+    Review fixes: headers work
+    
+    - Add a pretty header for all public headers
+    - Add #ifndef IN_TELEPATHY_QT4_HEADER ... in all public headers.
+    - Fixed names of header guards
+    - Usage of pretty headers
+    - Added new stuff to the makefile
+    - Removed some whitespaces
+
+ TelepathyQt4/models/AccountsModel           |    6 +++---
+ TelepathyQt4/models/AccountsModelItem       |   13 +++++++++++++
+ TelepathyQt4/models/AvatarImageProvider     |    6 +++---
+ TelepathyQt4/models/CMakeLists.txt          |    6 +++++-
+ TelepathyQt4/models/ContactModelItem        |   13 +++++++++++++
+ TelepathyQt4/models/ConversationItem        |   13 +++++++++++++
+ TelepathyQt4/models/ConversationModel       |    7 +++----
+ TelepathyQt4/models/FlatModelProxy          |    6 +++---
+ TelepathyQt4/models/accounts-model-item.cpp |    6 +++---
+ TelepathyQt4/models/accounts-model-item.h   |   11 +++++++----
+ TelepathyQt4/models/accounts-model.cpp      |    8 ++++----
+ TelepathyQt4/models/accounts-model.h        |    9 ++++-----
+ TelepathyQt4/models/avatar-image-provider.h |    9 ++++-----
+ TelepathyQt4/models/contact-model-item.cpp  |    4 ++--
+ TelepathyQt4/models/contact-model-item.h    |   15 +++++++++------
+ TelepathyQt4/models/conversation-item.cpp   |    2 +-
+ TelepathyQt4/models/conversation-item.h     |   13 ++++++++-----
+ TelepathyQt4/models/conversation-model.cpp  |    4 ++--
+ TelepathyQt4/models/conversation-model.h    |    7 +++----
+ TelepathyQt4/models/flat-model-proxy.h      |   11 +++++------
+ TelepathyQt4/models/tree-node.h             |    9 ++++-----
+ 21 files changed, 112 insertions(+), 66 deletions(-)
+
+commit dfa32db98a1a9b5fcffe67f2b93f1c5416e7e6cb
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Dec 8 13:27:42 2010 -0500
+
+    Added delelteItem in conversation model
+
+ TelepathyQt4/models/conversation-model.cpp |   13 +++++++++++++
+ TelepathyQt4/models/conversation-model.h   |    1 +
+ 2 files changed, 14 insertions(+), 0 deletions(-)
+
+commit 32a065a15a5b8bf8d7f54d5a619cdb23ccedd8b6
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Dec 8 13:25:36 2010 -0500
+
+    More simplified version to fix memory leak using qDeleteAll
+
+ TelepathyQt4/models/conversation-model.cpp |    7 ++-----
+ 1 files changed, 2 insertions(+), 5 deletions(-)
+
+commit 39254d0bbf79f432854a4534e71543eab94a8001
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Dec 8 12:01:37 2010 -0500
+
+    Exposed some stuff from Conversation Model so it can be reused more easily
+
+ TelepathyQt4/models/conversation-model.h |   14 ++++++++------
+ 1 files changed, 8 insertions(+), 6 deletions(-)
+
+commit b0b2dce28f211f7d15f028def7aec414eb0c6d3d
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Wed Dec 8 12:00:42 2010 -0500
+
+    Fixed memory leak in Conversation Model
+
+ TelepathyQt4/models/conversation-model.cpp |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit bf47e225e621c1f0d8a458e8161aad8d37340073
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Dec 6 05:29:53 2010 -0800
+
+    Changed how the accounts model item is refreshed when the account connection status changes after the API breakage
+
+ TelepathyQt4/models/accounts-model-item.cpp |    9 +++++++--
+ 1 files changed, 7 insertions(+), 2 deletions(-)
+
+commit cc9cf314f211b0716e2d30b4d20856e6a7d70450
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Mon Nov 29 10:46:35 2010 -0800
+
+    Fix the models after the API breakage
+
+ TelepathyQt4/models/accounts-model-item.cpp       |   72 ++++++++++-----------
+ TelepathyQt4/models/accounts-model-item.h         |    9 +--
+ TelepathyQt4/models/accounts-model.cpp            |    4 +-
+ TelepathyQt4/models/accounts-model.h              |    3 +-
+ TelepathyQt4/models/contact-model-item.cpp        |   41 ++++++------
+ TelepathyQt4/models/conversation-model.cpp        |    5 +-
+ TelepathyQt4/models/conversation-model.h          |    2 +-
+ examples/accounts-model/telepathy-initializer.cpp |   10 ++--
+ examples/conversation-model/chatwindow.cpp        |    9 ++-
+ examples/conversation-model/chatwindow.h          |    2 +-
+ 10 files changed, 74 insertions(+), 83 deletions(-)
+
+commit 6e94ae42f62754d942cce1a66639e4d5e745d7cf
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Nov 24 07:45:47 2010 -0800
+
+    Only remove or add contacts instead of removing and adding the whole contacts list on refresh
+
+ TelepathyQt4/models/accounts-model-item.cpp |   46 +++++++++++++++++++++-----
+ 1 files changed, 37 insertions(+), 9 deletions(-)
+
+commit 75641aac89d9fa53551bb2540c0c66955146df32
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Nov 18 03:42:11 2010 -0800
+
+    Make it possible to accept subscription requests
+
+ TelepathyQt4/models/contact-model-item.cpp |   35 ++++++++++++++++++++++++++++
+ TelepathyQt4/models/contact-model-item.h   |    1 +
+ 2 files changed, 36 insertions(+), 0 deletions(-)
+
+commit b7152a870663f90cff1919d6e9178111176c4293
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Nov 17 11:29:32 2010 -0800
+
+    Handle contact changes
+
+ TelepathyQt4/models/contact-model-item.cpp |   39 +++++++++++++++++++++++++++-
+ TelepathyQt4/models/contact-model-item.h   |    3 ++
+ 2 files changed, 41 insertions(+), 1 deletions(-)
+
+commit de7bef9e75c4c2d608106b4ef9f306a540183071
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Nov 17 10:31:04 2010 -0800
+
+    Handle connections created later on
+
+ TelepathyQt4/models/accounts-model-item.cpp |   20 +++++++++++++++++++-
+ TelepathyQt4/models/accounts-model-item.h   |    1 +
+ 2 files changed, 20 insertions(+), 1 deletions(-)
+
+commit 485b96e247d7f4285568b72f56f7b2070478944c
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Nov 17 09:24:32 2010 -0800
+
+    Connect the change of rows to rowCountChanged signal
+
+ TelepathyQt4/models/flat-model-proxy.cpp |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit ba523c080a6e52743c92b97eb3bd5dbec160981d
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Nov 17 04:06:00 2010 -0800
+
+    Set the parent of the nodes so that they don't get deleted when used from QML
+
+ TelepathyQt4/models/tree-node.cpp |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit fc05024b21ece91dd9cd73e330b5ff7abda9b1b5
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Nov 12 20:40:30 2010 -0800
+
+    Added account item null check in contactItemForId.
+
+ TelepathyQt4/models/accounts-model.cpp |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 58340dff977db766fd9eeb0b9d74d0686ca67c4b
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Fri Nov 12 20:39:46 2010 -0800
+
+    Better to remove from the parent in the destructor, otherwise if the destructor is called directly then bad things happen.
+
+ TelepathyQt4/models/tree-node.cpp |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit c8df20f6c6a4aa16fb841806c6e080cc6b22f070
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Nov 12 05:54:30 2010 -0800
+
+    Don't read queued messages on model creation. Leave them pending
+
+ TelepathyQt4/models/conversation-model.cpp |    5 -----
+ 1 files changed, 0 insertions(+), 5 deletions(-)
+
+commit 99b6c01cba1a030666085905634cac0588d03a84
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Nov 11 21:53:38 2010 -0800
+
+    Change the way the model is updated when an account changes status. The old mechanism was broken by design. Now it provides a way to refresh the contacts that can be called from an external class, which is the way it should be.
+
+ TelepathyQt4/models/accounts-model-item.cpp |   18 ++++++++++++------
+ TelepathyQt4/models/accounts-model-item.h   |    9 +++++++--
+ 2 files changed, 19 insertions(+), 8 deletions(-)
+
+commit e2b0e8d552b2b02feb001e969768815ed35ba4d7
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Nov 11 10:10:05 2010 -0800
+
+    Initialize the conversation model disconnected from the message queue
+
+ TelepathyQt4/models/conversation-model.cpp |    7 ++-----
+ TelepathyQt4/models/conversation-model.h   |    4 ++--
+ 2 files changed, 4 insertions(+), 7 deletions(-)
+
+commit e9f2c1eef290353dcefcfea90fc4f00b08d5b213
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Nov 10 17:36:37 2010 -0800
+
+    Add methods to reconnect/disconnect the conversation model from the the channel message queue
+
+ TelepathyQt4/models/conversation-model.cpp |   29 ++++++++++++++++++++++++++++
+ TelepathyQt4/models/conversation-model.h   |    2 +
+ 2 files changed, 31 insertions(+), 0 deletions(-)
+
+commit 858063b8486247a5040d77e2f3fea910600d646e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Nov 5 14:08:40 2010 +0000
+
+    Propagate dataChanged signal in FlagModelProxy.
+
+ TelepathyQt4/models/flat-model-proxy.cpp |   20 ++++++++++++++++++++
+ TelepathyQt4/models/flat-model-proxy.h   |    1 +
+ 2 files changed, 21 insertions(+), 0 deletions(-)
+
+commit ef687d3262cb1ceed2712c41f116d38f751431e0
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Nov 5 12:16:00 2010 +0000
+
+    Make AccountsModel slots protected.
+
+ TelepathyQt4/models/accounts-model.h |   12 ++++++------
+ 1 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 53a15dfb796e97883f3abebc0ae8ad75a3956e5f
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Nov 5 03:52:26 2010 -0700
+
+    Add the QObject *parent to the constructor
+
+ TelepathyQt4/models/conversation-model.cpp |    5 +++--
+ TelepathyQt4/models/conversation-model.h   |    2 +-
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 099c5e37d49c2bdd7d1aaba3a356cff4fb8b1666
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Nov 5 03:33:25 2010 -0700
+
+    Add a function to get the contact item for a given id
+
+ TelepathyQt4/models/accounts-model.cpp |   17 +++++++++++++++++
+ TelepathyQt4/models/accounts-model.h   |    1 +
+ 2 files changed, 18 insertions(+), 0 deletions(-)
+
+commit 2178df0f471a4a67a06828368af2d3cf482b8844
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Nov 5 03:33:09 2010 -0700
+
+    Make the data() method invokable, so that it can be accessed in qml
+
+ TelepathyQt4/models/contact-model-item.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 101acd181ae892ffcf6306b7cadc29180c89a3b0
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Nov 4 15:16:55 2010 +0000
+
+    Improve account model example layout.
+
+ examples/accounts-model/account-view.qml |    9 +++++----
+ 1 files changed, 5 insertions(+), 4 deletions(-)
+
+commit 226ea22e0085f01eb3e6a20e36ff3b6385962ca1
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Nov 5 03:16:07 2010 -0700
+
+    The model items need to be exported so that they can be used in apps
+
+ TelepathyQt4/models/contact-model-item.h |    2 +-
+ TelepathyQt4/models/tree-node.h          |    3 ++-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit ea1b91d0075b04fe3e019a89195d6dad634a705e
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Nov 4 10:39:07 2010 -0700
+
+    Add a placeholder role
+
+ TelepathyQt4/models/accounts-model.h |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit 64532f526dab9ac6b5968fa31b07e5b4ccc5f386
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Nov 4 10:32:56 2010 -0700
+
+    Make the data() method virtual so that inherited models can reimplement it
+
+ TelepathyQt4/models/accounts-model.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit a0137c6cdf5600e0a9c19a3a2d2c75b3a14b685f
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Nov 4 12:15:38 2010 +0000
+
+    Use uniqueIdentifier instead of objectPath in avatar image URLs.
+
+ TelepathyQt4/models/avatar-image-provider.cpp |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 25947474f63a5d416b727f5efc2010f493b9e0c8
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Nov 3 11:55:47 2010 +0000
+
+    Distinguish incoming from outgoing messages.
+
+ TelepathyQt4/models/conversation-item.h      |    3 ++-
+ TelepathyQt4/models/conversation-model.cpp   |   10 ++++++----
+ examples/conversation-model/conversation.qml |    2 +-
+ 3 files changed, 9 insertions(+), 6 deletions(-)
+
+commit ad1272d17a8f96b7647d5625757678b761c0b2c4
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Nov 3 10:45:48 2010 +0000
+
+    Fix contact BlockedRole.
+
+ TelepathyQt4/models/contact-model-item.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit ba80468de6c029a2813b37a47ab1c3a63e069709
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Nov 2 16:51:05 2010 +0000
+
+    Fix models installation.
+
+ TelepathyQt4/models/CMakeLists.txt         |   30 ++++++++++++++--------------
+ examples/accounts-model/CMakeLists.txt     |    4 +-
+ examples/conversation-model/CMakeLists.txt |    2 +-
+ 3 files changed, 18 insertions(+), 18 deletions(-)
+
+commit 24ac784eff293037e0f01c5a145a3d94fc4b01dd
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Nov 2 16:17:40 2010 +0000
+
+    Renamed ui -> models.
+
+ TelepathyQt4/models/AccountsModel                 |   13 +
+ TelepathyQt4/models/AvatarImageProvider           |   13 +
+ TelepathyQt4/models/CMakeLists.txt                |   71 ++++++
+ TelepathyQt4/models/ConversationModel             |   15 ++
+ TelepathyQt4/models/FlatModelProxy                |   14 +
+ TelepathyQt4/models/accounts-model-item.cpp       |  271 +++++++++++++++++++++
+ TelepathyQt4/models/accounts-model-item.h         |   76 ++++++
+ TelepathyQt4/models/accounts-model.cpp            |  252 +++++++++++++++++++
+ TelepathyQt4/models/accounts-model.h              |  130 ++++++++++
+ TelepathyQt4/models/avatar-image-provider.cpp     |   58 +++++
+ TelepathyQt4/models/avatar-image-provider.h       |   56 +++++
+ TelepathyQt4/models/contact-model-item.cpp        |   87 +++++++
+ TelepathyQt4/models/contact-model-item.h          |   51 ++++
+ TelepathyQt4/models/conversation-item.cpp         |   67 +++++
+ TelepathyQt4/models/conversation-item.h           |   61 +++++
+ TelepathyQt4/models/conversation-model.cpp        |  149 +++++++++++
+ TelepathyQt4/models/conversation-model.h          |   76 ++++++
+ TelepathyQt4/models/flat-model-proxy.cpp          |  150 ++++++++++++
+ TelepathyQt4/models/flat-model-proxy.h            |   69 ++++++
+ TelepathyQt4/models/tree-node.cpp                 |  106 ++++++++
+ TelepathyQt4/models/tree-node.h                   |   66 +++++
+ TelepathyQt4/ui/AccountsModel                     |   13 -
+ TelepathyQt4/ui/AvatarImageProvider               |   13 -
+ TelepathyQt4/ui/CMakeLists.txt                    |   71 ------
+ TelepathyQt4/ui/ConversationModel                 |   15 --
+ TelepathyQt4/ui/FlatModelProxy                    |   14 -
+ TelepathyQt4/ui/accounts-model-item.cpp           |  271 ---------------------
+ TelepathyQt4/ui/accounts-model-item.h             |   76 ------
+ TelepathyQt4/ui/accounts-model.cpp                |  252 -------------------
+ TelepathyQt4/ui/accounts-model.h                  |  130 ----------
+ TelepathyQt4/ui/avatar-image-provider.cpp         |   58 -----
+ TelepathyQt4/ui/avatar-image-provider.h           |   56 -----
+ TelepathyQt4/ui/contact-model-item.cpp            |   87 -------
+ TelepathyQt4/ui/contact-model-item.h              |   51 ----
+ TelepathyQt4/ui/conversation-item.cpp             |   67 -----
+ TelepathyQt4/ui/conversation-item.h               |   61 -----
+ TelepathyQt4/ui/conversation-model.cpp            |  149 -----------
+ TelepathyQt4/ui/conversation-model.h              |   76 ------
+ TelepathyQt4/ui/flat-model-proxy.cpp              |  150 ------------
+ TelepathyQt4/ui/flat-model-proxy.h                |   69 ------
+ TelepathyQt4/ui/tree-node.cpp                     |  106 --------
+ TelepathyQt4/ui/tree-node.h                       |   66 -----
+ examples/accounts-model/accountwindow.cpp         |    6 +-
+ examples/accounts-model/accountwindow.h           |    2 +-
+ examples/accounts-model/telepathy-initializer.cpp |    2 +-
+ examples/accounts-model/telepathy-initializer.h   |    2 +-
+ examples/accounts-model/tree-view.cpp             |    4 +-
+ examples/accounts-model/tree-view.h               |    2 +-
+ examples/conversation-model/chatwindow.cpp        |    2 +-
+ examples/conversation-model/chatwindow.h          |    2 +-
+ 50 files changed, 1862 insertions(+), 1862 deletions(-)
+
+commit ebbe6730eb3f616f64f65e8b471e51f5751c1b36
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Nov 2 11:24:55 2010 +0000
+
+    Fix installed header list.
+
+ TelepathyQt4/ui/CMakeLists.txt |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit fba4ea0fd57aeb0a2efc6847943e47f7a47f7800
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Nov 1 08:51:05 2010 -0700
+
+    Added capability roles names
+
+ TelepathyQt4/ui/accounts-model.cpp |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 9ddc943f9ac20f2f0769a5ff5be618ae1538587f
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 15:08:56 2010 +0000
+
+    Moved examples to top-level examples directory.
+
+ TelepathyQt4/ui/CMakeLists.txt                     |    1 -
+ TelepathyQt4/ui/examples/CMakeLists.txt            |    3 -
+ TelepathyQt4/ui/examples/accounts/CMakeLists.txt   |   45 -----
+ TelepathyQt4/ui/examples/accounts/CheckBox.qml     |   29 ----
+ TelepathyQt4/ui/examples/accounts/ContactsView.qml |   54 ------
+ TelepathyQt4/ui/examples/accounts/EditableText.qml |   44 -----
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   89 ----------
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |   41 -----
+ .../ui/examples/accounts/accountwindow.cpp         |   73 ---------
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |   50 ------
+ TelepathyQt4/ui/examples/accounts/cross.png        |  Bin 270 -> 0 bytes
+ .../ui/examples/accounts/telepathy-initializer.cpp |  126 ---------------
+ .../ui/examples/accounts/telepathy-initializer.h   |   59 -------
+ .../ui/examples/accounts/tree-view-main.cpp        |   33 ----
+ TelepathyQt4/ui/examples/accounts/tree-view.cpp    |   57 -------
+ TelepathyQt4/ui/examples/accounts/tree-view.h      |   48 ------
+ .../ui/examples/conversation/CMakeLists.txt        |   20 ---
+ .../ui/examples/conversation/chatwindow.cpp        |  170 --------------------
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |  112 -------------
+ .../ui/examples/conversation/conversation.cpp      |   54 ------
+ .../ui/examples/conversation/conversation.qml      |   52 ------
+ examples/accounts-model/CMakeLists.txt             |   45 +++++
+ examples/accounts-model/CheckBox.qml               |   29 ++++
+ examples/accounts-model/ContactsView.qml           |   54 ++++++
+ examples/accounts-model/EditableText.qml           |   44 +++++
+ examples/accounts-model/account-view.qml           |   89 ++++++++++
+ examples/accounts-model/accounts.cpp               |   41 +++++
+ examples/accounts-model/accountwindow.cpp          |   73 +++++++++
+ examples/accounts-model/accountwindow.h            |   50 ++++++
+ examples/accounts-model/cross.png                  |  Bin 0 -> 270 bytes
+ examples/accounts-model/telepathy-initializer.cpp  |  126 +++++++++++++++
+ examples/accounts-model/telepathy-initializer.h    |   59 +++++++
+ examples/accounts-model/tree-view-main.cpp         |   33 ++++
+ examples/accounts-model/tree-view.cpp              |   57 +++++++
+ examples/accounts-model/tree-view.h                |   48 ++++++
+ examples/conversation-model/CMakeLists.txt         |   20 +++
+ examples/conversation-model/chatwindow.cpp         |  170 ++++++++++++++++++++
+ examples/conversation-model/chatwindow.h           |  112 +++++++++++++
+ examples/conversation-model/conversation.cpp       |   54 ++++++
+ examples/conversation-model/conversation.qml       |   52 ++++++
+ 40 files changed, 1156 insertions(+), 1160 deletions(-)
+
+commit b1c3cffcb54be31770ffb95a0b975e47ee34aaac
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 14:55:16 2010 +0000
+
+    Merge accounts and treeview examples.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt            |    1 -
+ TelepathyQt4/ui/examples/accounts/CMakeLists.txt   |   25 ++++
+ .../ui/examples/accounts/tree-view-main.cpp        |   33 +++++
+ TelepathyQt4/ui/examples/accounts/tree-view.cpp    |   57 +++++++++
+ TelepathyQt4/ui/examples/accounts/tree-view.h      |   48 ++++++++
+ TelepathyQt4/ui/examples/treeview/CMakeLists.txt   |   22 ----
+ TelepathyQt4/ui/examples/treeview/main.cpp         |   33 -----
+ .../ui/examples/treeview/telepathy-initializer.cpp |  126 --------------------
+ .../ui/examples/treeview/telepathy-initializer.h   |   59 ---------
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp    |   57 ---------
+ TelepathyQt4/ui/examples/treeview/tree-view.h      |   48 --------
+ 11 files changed, 163 insertions(+), 346 deletions(-)
+
+commit f96a3c1e196dad762b05aa006f0fe56e9a09c535
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 14:30:18 2010 +0000
+
+    Rename AccountModel -> AccountsModel.
+
+ TelepathyQt4/ui/AccountModel                       |   13 -
+ TelepathyQt4/ui/AccountsModel                      |   13 +
+ TelepathyQt4/ui/CMakeLists.txt                     |   15 +-
+ TelepathyQt4/ui/account-model-item.cpp             |  271 --------------------
+ TelepathyQt4/ui/account-model-item.h               |   76 ------
+ TelepathyQt4/ui/account-model.cpp                  |  247 ------------------
+ TelepathyQt4/ui/account-model.h                    |  130 ----------
+ TelepathyQt4/ui/accounts-model-item.cpp            |  271 ++++++++++++++++++++
+ TelepathyQt4/ui/accounts-model-item.h              |   76 ++++++
+ TelepathyQt4/ui/accounts-model.cpp                 |  247 ++++++++++++++++++
+ TelepathyQt4/ui/accounts-model.h                   |  130 ++++++++++
+ TelepathyQt4/ui/contact-model-item.cpp             |   35 ++--
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |    2 +-
+ .../ui/examples/accounts/telepathy-initializer.cpp |    8 +-
+ .../ui/examples/accounts/telepathy-initializer.h   |    6 +-
+ .../ui/examples/treeview/telepathy-initializer.cpp |    8 +-
+ .../ui/examples/treeview/telepathy-initializer.h   |    6 +-
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp    |    4 +-
+ TelepathyQt4/ui/examples/treeview/tree-view.h      |    2 +-
+ 19 files changed, 780 insertions(+), 780 deletions(-)
+
+commit d59db4c6026f88a7d538d2ddf088661a73400251
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Nov 1 07:21:06 2010 -0700
+
+    Added Contact Item Capabilities roles
+
+ TelepathyQt4/ui/account-model.h        |    7 ++++++-
+ TelepathyQt4/ui/contact-model-item.cpp |   11 +++++++++++
+ 2 files changed, 17 insertions(+), 1 deletions(-)
+
+commit de01762c28d9b503b05a61cf3ccdbfd4248a73d6
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 14:03:00 2010 +0000
+
+    Change copyright year to 2010 only.
+
+ TelepathyQt4/ui/account-model-item.cpp             |    2 +-
+ TelepathyQt4/ui/account-model-item.h               |    2 +-
+ TelepathyQt4/ui/account-model.cpp                  |    2 +-
+ TelepathyQt4/ui/account-model.h                    |    2 +-
+ TelepathyQt4/ui/avatar-image-provider.cpp          |    2 +-
+ TelepathyQt4/ui/avatar-image-provider.h            |    2 +-
+ TelepathyQt4/ui/contact-model-item.cpp             |    2 +-
+ TelepathyQt4/ui/contact-model-item.h               |    2 +-
+ TelepathyQt4/ui/conversation-item.cpp              |    2 +-
+ TelepathyQt4/ui/conversation-item.h                |    2 +-
+ TelepathyQt4/ui/conversation-model.cpp             |    2 +-
+ TelepathyQt4/ui/conversation-model.h               |    2 +-
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |    2 +-
+ .../ui/examples/accounts/accountwindow.cpp         |    2 +-
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |    2 +-
+ .../ui/examples/accounts/telepathy-initializer.cpp |    2 +-
+ .../ui/examples/accounts/telepathy-initializer.h   |    2 +-
+ .../ui/examples/conversation/chatwindow.cpp        |    2 +-
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |    2 +-
+ .../ui/examples/conversation/conversation.cpp      |    2 +-
+ TelepathyQt4/ui/examples/treeview/main.cpp         |    2 +-
+ .../ui/examples/treeview/telepathy-initializer.cpp |    2 +-
+ .../ui/examples/treeview/telepathy-initializer.h   |    2 +-
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp    |    2 +-
+ TelepathyQt4/ui/examples/treeview/tree-view.h      |    2 +-
+ TelepathyQt4/ui/flat-model-proxy.cpp               |    2 +-
+ TelepathyQt4/ui/flat-model-proxy.h                 |    2 +-
+ TelepathyQt4/ui/tree-node.cpp                      |    2 +-
+ TelepathyQt4/ui/tree-node.h                        |    2 +-
+ 29 files changed, 29 insertions(+), 29 deletions(-)
+
+commit 3f904a9f0f4b0ec819eebc7f8c928635e0c0c4de
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 14:02:00 2010 +0000
+
+    Remove ConnectionRole.
+
+ TelepathyQt4/ui/account-model-item.cpp |    2 --
+ TelepathyQt4/ui/account-model.cpp      |    1 -
+ TelepathyQt4/ui/account-model.h        |    1 -
+ 3 files changed, 0 insertions(+), 4 deletions(-)
+
+commit de731d1cca4377c80abc69ac84181385b31d67e1
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 13:44:01 2010 +0000
+
+    Better role naming.
+    
+    StatusMessageRole -> PresenceStatusMessageRole
+    ConnectionManagerRole -> ConnectionManagerNameRole
+
+ TelepathyQt4/ui/account-model-item.cpp |   10 ++++++----
+ TelepathyQt4/ui/account-model.cpp      |    7 ++++---
+ TelepathyQt4/ui/account-model.h        |    7 ++++---
+ 3 files changed, 14 insertions(+), 10 deletions(-)
+
+commit bb65bd63af8f4798c4d0c0107b51862c64eab433
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 12:02:28 2010 +0000
+
+    Adapt to spacing convention for visibility declaration.
+
+ TelepathyQt4/ui/account-model-item.h               |    3 ---
+ TelepathyQt4/ui/account-model.h                    |    3 ---
+ TelepathyQt4/ui/avatar-image-provider.h            |    1 -
+ TelepathyQt4/ui/conversation-model.h               |    3 ---
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |    1 -
+ .../ui/examples/accounts/telepathy-initializer.h   |    1 -
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |    6 ------
+ .../ui/examples/treeview/telepathy-initializer.h   |    1 -
+ TelepathyQt4/ui/examples/treeview/tree-view.h      |    2 --
+ TelepathyQt4/ui/flat-model-proxy.h                 |    2 --
+ TelepathyQt4/ui/tree-node.h                        |    2 --
+ 11 files changed, 0 insertions(+), 25 deletions(-)
+
+commit 38e63c50dd129fb00377856b12e18f6abe5e1b7d
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:29:10 2010 +0000
+
+    Reformat constructor initialization lists.
+
+ TelepathyQt4/ui/account-model.cpp                  |    4 ++--
+ TelepathyQt4/ui/avatar-image-provider.cpp          |    4 ++--
+ TelepathyQt4/ui/conversation-item.cpp              |   10 +++++-----
+ TelepathyQt4/ui/conversation-model.cpp             |    4 ++--
+ .../ui/examples/accounts/telepathy-initializer.cpp |    8 ++++----
+ .../ui/examples/conversation/chatwindow.cpp        |   12 ++++++------
+ .../ui/examples/treeview/telepathy-initializer.cpp |    8 ++++----
+ 7 files changed, 25 insertions(+), 25 deletions(-)
+
+commit 004ddee3850cf720373e963deb056ac9827f3112
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:19:47 2010 +0000
+
+    Add IN_TELEPATHY_QT4_HEADER error to installed headers.
+
+ TelepathyQt4/ui/account-model-item.cpp    |    2 +-
+ TelepathyQt4/ui/avatar-image-provider.cpp |    2 +-
+ TelepathyQt4/ui/avatar-image-provider.h   |    4 ++++
+ TelepathyQt4/ui/flat-model-proxy.cpp      |    2 +-
+ TelepathyQt4/ui/flat-model-proxy.h        |    4 ++++
+ 5 files changed, 11 insertions(+), 3 deletions(-)
+
+commit c861c775be814fbf871c9f65fdf5be5623d35bba
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:14:49 2010 +0000
+
+    Remove extra blank lines.
+
+ .../ui/examples/conversation/chatwindow.cpp        |    1 -
+ .../ui/examples/conversation/conversation.cpp      |    1 -
+ TelepathyQt4/ui/examples/treeview/main.cpp         |    1 -
+ TelepathyQt4/ui/flat-model-proxy.cpp               |    3 ---
+ 4 files changed, 0 insertions(+), 6 deletions(-)
+
+commit 7e74a2e669083a014bf8d27c2d24636db3b2509e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:09:22 2010 +0000
+
+    Remove spaces at the end of lines.
+
+ TelepathyQt4/ui/account-model.cpp      |    4 ++--
+ TelepathyQt4/ui/account-model.h        |    2 +-
+ TelepathyQt4/ui/conversation-item.h    |    2 +-
+ TelepathyQt4/ui/conversation-model.cpp |    4 ++--
+ TelepathyQt4/ui/flat-model-proxy.cpp   |    4 ++--
+ 5 files changed, 8 insertions(+), 8 deletions(-)
+
+commit a3010faf667dcfd0fca0186ce1d89cb2c9826530
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:07:34 2010 +0000
+
+    Put TreeNode into the Tp namespace.
+
+ TelepathyQt4/ui/tree-node.cpp |    5 +++++
+ TelepathyQt4/ui/tree-node.h   |    5 +++++
+ 2 files changed, 10 insertions(+), 0 deletions(-)
+
+commit 82d2709ffec1f968d9bff491f12e5609b10477fd
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 11:03:42 2010 +0000
+
+    Comply to header inclusion stlye.
+
+ TelepathyQt4/ui/account-model-item.cpp             |    5 +++--
+ TelepathyQt4/ui/account-model.cpp                  |    5 +++--
+ TelepathyQt4/ui/avatar-image-provider.cpp          |    2 +-
+ TelepathyQt4/ui/contact-model-item.cpp             |    3 ++-
+ TelepathyQt4/ui/conversation-item.cpp              |    4 +++-
+ TelepathyQt4/ui/conversation-model.cpp             |    7 ++++---
+ .../ui/examples/accounts/accountwindow.cpp         |   14 +++++++-------
+ .../ui/examples/accounts/telepathy-initializer.cpp |    1 +
+ .../ui/examples/conversation/chatwindow.cpp        |   10 +++++-----
+ .../ui/examples/treeview/telepathy-initializer.cpp |    1 +
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp    |    2 +-
+ TelepathyQt4/ui/flat-model-proxy.cpp               |    3 ++-
+ TelepathyQt4/ui/tree-node.cpp                      |    3 ++-
+ 13 files changed, 35 insertions(+), 25 deletions(-)
+
+commit 5b852707e1fb73f2b42eeb963b7f1ee1f1a0d018
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Nov 1 10:09:19 2010 +0000
+
+    Fix initialization in examples when all accounts are offline.
+
+ .../ui/examples/accounts/telepathy-initializer.cpp |    1 +
+ .../ui/examples/treeview/telepathy-initializer.cpp |    1 +
+ 2 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 0631c33d9fa4f8940fdde49fdb4ec6ba7b28d929
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Oct 29 11:49:45 2010 -0700
+
+    Make the connection status changing more qml friendly
+
+ TelepathyQt4/ui/account-model-item.cpp |    2 ++
+ TelepathyQt4/ui/account-model-item.h   |    6 +++---
+ TelepathyQt4/ui/account-model.cpp      |   18 ++++++------------
+ TelepathyQt4/ui/account-model.h        |    3 ++-
+ 4 files changed, 13 insertions(+), 16 deletions(-)
+
+commit 92d2ae368ab88aeb5c2eedd640a1793317323c2d
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Oct 29 09:46:54 2010 -0700
+
+    Notify on connection status changes
+
+ TelepathyQt4/ui/account-model-item.cpp |    1 +
+ TelepathyQt4/ui/account-model-item.h   |    6 ++++-
+ TelepathyQt4/ui/account-model.cpp      |   34 ++++++++++++++++++++++++++++++-
+ TelepathyQt4/ui/account-model.h        |    4 +++
+ 4 files changed, 42 insertions(+), 3 deletions(-)
+
+commit 090686807c93abf92dac34a36443bedf1681812b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 16:11:09 2010 +0100
+
+    Add AvatarImageProvider and avatar role for accounts.
+
+ TelepathyQt4/ui/AvatarImageProvider                |   13 +++++
+ TelepathyQt4/ui/CMakeLists.txt                     |    3 +
+ TelepathyQt4/ui/account-model-item.cpp             |    3 +
+ TelepathyQt4/ui/account-model.h                    |    2 +-
+ TelepathyQt4/ui/avatar-image-provider.cpp          |   58 ++++++++++++++++++++
+ TelepathyQt4/ui/avatar-image-provider.h            |   53 ++++++++++++++++++
+ TelepathyQt4/ui/contact-model-item.cpp             |    4 ++
+ TelepathyQt4/ui/examples/accounts/ContactsView.qml |    2 +-
+ TelepathyQt4/ui/examples/accounts/account-view.qml |    8 +++-
+ .../ui/examples/accounts/accountwindow.cpp         |    7 +++
+ 10 files changed, 150 insertions(+), 3 deletions(-)
+
+commit 9f5d8f627d104f355eb010d3e5e5c4801704493e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 14:58:42 2010 +0100
+
+    Emit finished initialization signal when there is no online account.
+
+ .../ui/examples/accounts/telepathy-initializer.cpp |    8 ++++++--
+ .../ui/examples/accounts/telepathy-initializer.h   |    1 +
+ .../ui/examples/treeview/telepathy-initializer.cpp |    8 ++++++--
+ .../ui/examples/treeview/telepathy-initializer.h   |    1 +
+ 4 files changed, 14 insertions(+), 4 deletions(-)
+
+commit c198c7063ff6ca98e37dfd70c1feb193a405ccbb
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 14:46:32 2010 +0100
+
+    FlatModelProxy: Fix bug in index computation.
+
+ TelepathyQt4/ui/flat-model-proxy.cpp |    6 ++----
+ 1 files changed, 2 insertions(+), 4 deletions(-)
+
+commit 1f4ac69640eaa166418fc59a5207dd126f2df0a6
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:56:06 2010 +0100
+
+    Rename roles so that they all have a Role suffix.
+
+ TelepathyQt4/ui/account-model-item.cpp |    6 +++---
+ TelepathyQt4/ui/account-model.cpp      |    4 ++--
+ TelepathyQt4/ui/account-model.h        |    4 ++--
+ 3 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 83bdb4ff023dd80739d9fc5e71b92f837d9a23a6
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Fri Oct 29 06:27:59 2010 -0700
+
+    Return the account id as a role
+
+ TelepathyQt4/ui/account-model-item.cpp |    2 ++
+ TelepathyQt4/ui/account-model.cpp      |    2 +-
+ TelepathyQt4/ui/account-model.h        |    2 +-
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 9d1e2452cfc5ea051903771fc95fef52fb7559a6
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:49:48 2010 +0100
+
+    Update FlatModelProxy when its source changes.
+
+ TelepathyQt4/ui/flat-model-proxy.cpp |   52 ++++++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/flat-model-proxy.h   |    8 +++++
+ 2 files changed, 60 insertions(+), 0 deletions(-)
+
+commit 3f5f948343b126d517f98f0e8b62578d3a58cb4d
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:21:21 2010 +0100
+
+    AccountModel cleanup: remove mAccounts.
+
+ TelepathyQt4/ui/account-model-item.h |    1 +
+ TelepathyQt4/ui/account-model.cpp    |   42 ++++++++++-----------------------
+ TelepathyQt4/ui/account-model.h      |    1 -
+ 3 files changed, 14 insertions(+), 30 deletions(-)
+
+commit 94c69f8b603ae887a1cbc3e164ffb81e6b5d91a3
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:09:50 2010 +0100
+
+    Remove AccountModel::setupAccount function.
+
+ TelepathyQt4/ui/account-model.cpp |    8 +-------
+ TelepathyQt4/ui/account-model.h   |    1 -
+ 2 files changed, 1 insertions(+), 8 deletions(-)
+
+commit ecba4c13d48cdef4f70427557707e37ab5e95304
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:08:17 2010 +0100
+
+    Simplify onNewAccount slot.
+    
+    Use the existing mechanism for handling new items.
+
+ TelepathyQt4/ui/account-model.cpp |    8 ++------
+ 1 files changed, 2 insertions(+), 6 deletions(-)
+
+commit e286bc6637782603dc9edaf5ac48344364f66f3b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 12:02:13 2010 +0100
+
+    Batch add and remove signals for TreeNode.
+
+ TelepathyQt4/ui/account-model-item.cpp |   21 +++++++++++----------
+ TelepathyQt4/ui/account-model.cpp      |   31 +++++++++++++++++++------------
+ TelepathyQt4/ui/account-model.h        |    2 +-
+ TelepathyQt4/ui/tree-node.cpp          |   17 ++++++++++++-----
+ TelepathyQt4/ui/tree-node.h            |    4 ++--
+ 5 files changed, 45 insertions(+), 30 deletions(-)
+
+commit cb70a1ca5c1769ba9f5e34776b948a9828681b99
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Oct 28 12:14:15 2010 -0700
+
+    Add the CurrentPresenceTypeRole
+
+ TelepathyQt4/ui/account-model-item.cpp |    2 ++
+ TelepathyQt4/ui/account-model.cpp      |    1 +
+ TelepathyQt4/ui/account-model.h        |    1 +
+ 3 files changed, 4 insertions(+), 0 deletions(-)
+
+commit eebf6b683f8fd8ddab6e902e6a90e4b4fd98f3ec
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Oct 28 11:36:33 2010 -0700
+
+    Add the ConnectionStatusReason role
+
+ TelepathyQt4/ui/account-model-item.cpp |    2 ++
+ TelepathyQt4/ui/account-model.cpp      |    1 +
+ TelepathyQt4/ui/account-model.h        |    1 +
+ 3 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 9feb49575a122499e11ffa5dd3a7ab0da4acb5f9
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 29 10:34:29 2010 +0100
+
+    AccountModel: watch changes in the contact list.
+
+ TelepathyQt4/ui/account-model-item.cpp |   31 ++++++++++++++++++++++++++++---
+ TelepathyQt4/ui/account-model-item.h   |    5 +++++
+ TelepathyQt4/ui/account-model.cpp      |   11 +++++++++++
+ TelepathyQt4/ui/account-model.h        |    1 +
+ TelepathyQt4/ui/contact-model-item.h   |    2 ++
+ TelepathyQt4/ui/tree-node.h            |    3 ++-
+ 6 files changed, 49 insertions(+), 4 deletions(-)
+
+commit e98afdf38a7291dd38be6a3171d8484fe17184c0
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Oct 28 17:25:23 2010 -0700
+
+    Added rowCountChanged signal
+
+ TelepathyQt4/ui/flat-model-proxy.cpp |    5 +++++
+ TelepathyQt4/ui/flat-model-proxy.h   |    6 ++++++
+ 2 files changed, 11 insertions(+), 0 deletions(-)
+
+commit c62beb2f1b8bab31c0ba23000726ec9ac4735434
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Oct 28 14:13:35 2010 -0700
+
+    Added slot to add or remove contacts when account status changes
+
+ TelepathyQt4/ui/account-model-item.cpp |   20 ++++++++++++++++++++
+ TelepathyQt4/ui/account-model-item.h   |    4 ++++
+ 2 files changed, 24 insertions(+), 0 deletions(-)
+
+commit c53d065bb202daac9eb72363b26feabac74eec7e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 18:32:24 2010 +0100
+
+    Fix installation of model headers.
+
+ TelepathyQt4/ui/CMakeLists.txt |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit f6ecd9632d3203d5e2f4170b10e5a575d553937d
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 18:16:12 2010 +0100
+
+    Move account change notification connections to TreeNode.
+
+ TelepathyQt4/ui/account-model-item.cpp |   82 +++++++++++++++++++++++++-
+ TelepathyQt4/ui/account-model-item.h   |    8 ++-
+ TelepathyQt4/ui/account-model.cpp      |  104 +++++---------------------------
+ TelepathyQt4/ui/account-model.h        |    4 +-
+ TelepathyQt4/ui/contact-model-item.h   |    3 +-
+ TelepathyQt4/ui/tree-node.cpp          |   25 +++++++-
+ TelepathyQt4/ui/tree-node.h            |   12 +++-
+ 7 files changed, 139 insertions(+), 99 deletions(-)
+
+commit a5368e12b7be7433364eedb215046e1f2df592ef
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 17:51:39 2010 +0100
+
+    Add function to convert a TreeNode into a QModelIndex.
+
+ TelepathyQt4/ui/account-model.cpp |   22 +++++++++++++++-------
+ TelepathyQt4/ui/account-model.h   |    1 +
+ 2 files changed, 16 insertions(+), 7 deletions(-)
+
+commit 746a1ac98531b9fd71bf3d23573efe3a55daa9a0
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 17:37:03 2010 +0100
+
+    Install FlatModelProxy header.
+
+ TelepathyQt4/ui/CMakeLists.txt                     |    3 +++
+ TelepathyQt4/ui/FlatModelProxy                     |   14 ++++++++++++++
+ .../ui/examples/accounts/accountwindow.cpp         |    3 ++-
+ 3 files changed, 19 insertions(+), 1 deletions(-)
+
+commit e04ebeaf83f36ed35b68b76e82c33ebcfa3dea8e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 17:33:07 2010 +0100
+
+    Move FlatModelProxy into the Tp namespace.
+
+ .../ui/examples/accounts/accountwindow.cpp         |    2 +-
+ TelepathyQt4/ui/flat-model-proxy.cpp               |    5 +++++
+ TelepathyQt4/ui/flat-model-proxy.h                 |    4 ++++
+ 3 files changed, 10 insertions(+), 1 deletions(-)
+
+commit 2ca5d5d8c2ec3c4293091a45d23656736802fe7b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 17:25:44 2010 +0100
+
+    Moved TreeNode and subclasses to separate files.
+
+ TelepathyQt4/ui/CMakeLists.txt                     |    6 +
+ TelepathyQt4/ui/account-model-item.cpp             |  132 +++++++++++++
+ TelepathyQt4/ui/account-model-item.h               |   61 ++++++
+ TelepathyQt4/ui/account-model.cpp                  |  204 +-------------------
+ TelepathyQt4/ui/account-model.h                    |    7 +-
+ TelepathyQt4/ui/contact-model-item.cpp             |   70 +++++++
+ TelepathyQt4/ui/contact-model-item.h               |   50 +++++
+ TelepathyQt4/ui/examples/accounts/account-view.qml |    6 +-
+ TelepathyQt4/ui/tree-node.cpp                      |   70 +++++++
+ TelepathyQt4/ui/tree-node.h                        |   54 +++++
+ 10 files changed, 458 insertions(+), 202 deletions(-)
+
+commit 405a9dda6002ae0bdddb5aa0313e337efbd72a41
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 15:53:12 2010 +0100
+
+    Move AccountModel setters to AccountNode.
+
+ TelepathyQt4/ui/account-model.cpp |  114 ++++++++++++++++++-------------------
+ TelepathyQt4/ui/account-model.h   |    6 --
+ 2 files changed, 55 insertions(+), 65 deletions(-)
+
+commit 6e3f9846490a541a04fb071163cab40292f58762
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 12:26:27 2010 +0100
+
+    Replace ContactsListModel with AccountModel + FlatProxyModel.
+
+ TelepathyQt4/ui/CMakeLists.txt                     |    4 -
+ TelepathyQt4/ui/ContactsListModel                  |   13 -
+ TelepathyQt4/ui/contacts-list-model.cpp            |  282 --------------------
+ TelepathyQt4/ui/contacts-list-model.h              |   99 -------
+ TelepathyQt4/ui/examples/accounts/CMakeLists.txt   |    6 +-
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |    3 -
+ .../ui/examples/accounts/accountwindow.cpp         |   45 +---
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |   30 --
+ .../ui/examples/accounts/telepathy-initializer.cpp |  120 +++++++++
+ .../ui/examples/accounts/telepathy-initializer.h   |   59 ++++
+ 10 files changed, 193 insertions(+), 468 deletions(-)
+
+commit a76c6931cdd2f8062eec17d71085872fbcd22f34
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 12:23:47 2010 +0100
+
+    Add FlatProxyModel.
+
+ TelepathyQt4/ui/CMakeLists.txt       |    2 +
+ TelepathyQt4/ui/flat-model-proxy.cpp |   92 ++++++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/flat-model-proxy.h   |   49 ++++++++++++++++++
+ 3 files changed, 143 insertions(+), 0 deletions(-)
+
+commit 64531c5c2aa023ecb96b0c3345f4b21f777bbe9b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 11:57:59 2010 +0100
+
+    Move TelepathyInitializer to its own file.
+
+ TelepathyQt4/ui/examples/treeview/CMakeLists.txt   |    5 +-
+ .../ui/examples/treeview/telepathy-initializer.cpp |  120 ++++++++++++++++++++
+ .../ui/examples/treeview/telepathy-initializer.h   |   59 ++++++++++
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp    |   94 +---------------
+ TelepathyQt4/ui/examples/treeview/tree-view.h      |   31 -----
+ 5 files changed, 186 insertions(+), 123 deletions(-)
+
+commit 9a037e75ed7e1d25e883c42edfe27f1fa24b78c8
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 28 11:25:44 2010 +0100
+
+    Copy contact model functionality into the account model.
+
+ TelepathyQt4/ui/account-model.cpp |   57 ++++++++++++++++++++++++++++++++++++-
+ TelepathyQt4/ui/account-model.h   |   43 ++++++++++++++++++----------
+ 2 files changed, 84 insertions(+), 16 deletions(-)
+
+commit d43713a72b58b2f50783231c6354170d2972363a
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 27 17:17:09 2010 +0100
+
+    Move AccountModel's data function to TreeNode subclasses.
+
+ TelepathyQt4/ui/account-model.cpp |  111 +++++++++++++++++++------------------
+ TelepathyQt4/ui/account-model.h   |    4 +-
+ 2 files changed, 60 insertions(+), 55 deletions(-)
+
+commit 861d17696b298c9a42469c1dd26557c40085e3ab
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 27 17:04:05 2010 +0100
+
+    Upgrade contacts in the treeview example.
+
+ TelepathyQt4/ui/account-model.cpp               |    1 -
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp |   26 +++++++++++++++++++++-
+ TelepathyQt4/ui/examples/treeview/tree-view.h   |    1 +
+ 3 files changed, 25 insertions(+), 3 deletions(-)
+
+commit 6d45883662b162610b864ea70d5e51a9cfa72659
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 27 16:53:18 2010 +0100
+
+    Arrange account and contacts in a tree structure.
+
+ TelepathyQt4/ui/account-model.cpp |  108 +++++++++++++++++++++++++++++++++----
+ TelepathyQt4/ui/account-model.h   |    4 ++
+ 2 files changed, 101 insertions(+), 11 deletions(-)
+
+commit 8774f025727865b17598b064588cc801d56882c8
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 27 16:07:44 2010 +0100
+
+    Add treeview example.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt          |    2 +
+ TelepathyQt4/ui/examples/treeview/CMakeLists.txt |   19 ++++
+ TelepathyQt4/ui/examples/treeview/main.cpp       |   34 ++++++
+ TelepathyQt4/ui/examples/treeview/tree-view.cpp  |  123 ++++++++++++++++++++++
+ TelepathyQt4/ui/examples/treeview/tree-view.h    |   80 ++++++++++++++
+ 5 files changed, 258 insertions(+), 0 deletions(-)
+
+commit f916067344e5dcbb32bc339638db5dc8ad5b0881
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 27 11:36:21 2010 +0100
+
+    AccountModel now inherits from QAbstractItemModel.
+
+ TelepathyQt4/ui/account-model.cpp |  121 ++++++++++++++++++++++++-------------
+ TelepathyQt4/ui/account-model.h   |    6 ++-
+ 2 files changed, 84 insertions(+), 43 deletions(-)
+
+commit ee23ee751d5a97df17abda29d0225d67ed599bc2
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 25 05:38:41 2010 -0700
+
+    Fixed connect statement of contacts model
+
+ TelepathyQt4/ui/contacts-list-model.cpp |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e9faa4dede355d4f47b416954086a8adeb51e371
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 17:42:54 2010 +0100
+
+    AccountModel does not initialize the account manager anymore.
+    
+    The account example now initializes the account manager before handing it over
+    to AccountModel.
+
+ TelepathyQt4/ui/account-model.cpp                  |   31 ++-----
+ TelepathyQt4/ui/account-model.h                    |    1 -
+ TelepathyQt4/ui/examples/accounts/CMakeLists.txt   |    6 +-
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |   24 ++----
+ .../ui/examples/accounts/accountwindow.cpp         |   90 ++++++++++++++++++++
+ TelepathyQt4/ui/examples/accounts/accountwindow.h  |   81 ++++++++++++++++++
+ 6 files changed, 191 insertions(+), 42 deletions(-)
+
+commit fe56b20204f98db2a1bc6044d5695d79e9f2b0a8
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 16:32:56 2010 +0100
+
+    Only upgrade channel contacts in the conversation example.
+
+ .../ui/examples/conversation/chatwindow.cpp        |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 973ab6a16ce7767177fc7022915af998e842f1f1
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 16:29:00 2010 +0100
+
+    Reworked and cleaned up initialization in the conversation example.
+    
+    ConversationModel is not responsible anymore for initializing the channel.
+
+ TelepathyQt4/ui/conversation-model.cpp             |   14 +-
+ .../ui/examples/conversation/chatwindow.cpp        |  118 +++++++++++++-------
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |   44 ++++++--
+ 3 files changed, 120 insertions(+), 56 deletions(-)
+
+commit 3a788b937340369c328c3b8dd23482afebe5615a
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Mon Oct 25 11:02:44 2010 -0700
+
+    Add a function to set the account presence
+    
+    This might be done in a different way later though
+
+ TelepathyQt4/ui/account-model.cpp |   11 +++++++++++
+ TelepathyQt4/ui/account-model.h   |    1 +
+ 2 files changed, 12 insertions(+), 0 deletions(-)
+
+commit e40ccc92f22cbdc3ef3d04b8fd9b9db365bd04bf
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 14:09:18 2010 +0100
+
+    Refactor account qml example to reduce duplication.
+
+ TelepathyQt4/ui/account-model.cpp                  |    1 -
+ TelepathyQt4/ui/examples/accounts/EditableText.qml |   44 ++++++++++
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   91 +++-----------------
+ 3 files changed, 55 insertions(+), 81 deletions(-)
+
+commit 798d70bec557e3d122d8f3f4980c0f5e6e80c0ba
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 13:35:44 2010 +0100
+
+    Refactor AccountModel::setData to use setter functions.
+
+ TelepathyQt4/ui/account-model.cpp |   37 ++++++++++++++++++-------------------
+ 1 files changed, 18 insertions(+), 19 deletions(-)
+
+commit 7b87b7c40b40e3d79196c1bdb8acac3a2f174518
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 12:13:35 2010 +0100
+
+    Add conversation item type.
+    
+    Add field 'type' to ConversationItem to distinguish normal chat messages from
+    events.
+
+ TelepathyQt4/ui/conversation-item.cpp              |   15 ++++++--
+ TelepathyQt4/ui/conversation-item.h                |   17 +++++++---
+ TelepathyQt4/ui/conversation-model.cpp             |   33 ++++++++++++++------
+ TelepathyQt4/ui/conversation-model.h               |    7 ++--
+ .../ui/examples/conversation/conversation.qml      |   12 ++++++-
+ 5 files changed, 60 insertions(+), 24 deletions(-)
+
+commit f2abc448a2f25e77c029d27157256054ceb078f9
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 11:52:10 2010 +0100
+
+    Use selfContact for own messages in ConversationModel.
+
+ TelepathyQt4/ui/conversation-model.cpp             |   16 +++++++++++-----
+ TelepathyQt4/ui/conversation-model.h               |    3 ++-
+ .../ui/examples/conversation/chatwindow.cpp        |    8 ++++----
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |    2 +-
+ 4 files changed, 18 insertions(+), 11 deletions(-)
+
+commit 622bc2b39b12f8059d218f5fc0c5b74265a934ef
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 25 11:33:18 2010 +0100
+
+    Add "left the chat" messages to ConversationModel.
+
+ TelepathyQt4/ui/conversation-model.cpp |   13 +++++++++++++
+ TelepathyQt4/ui/conversation-model.h   |    4 ++++
+ 2 files changed, 17 insertions(+), 0 deletions(-)
+
+commit f94e80ae313d750f172518071b0c618676dd8962
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 22 10:52:11 2010 +0100
+
+    Make account nickname editable.
+
+ TelepathyQt4/ui/account-model.cpp                  |    8 +++++
+ TelepathyQt4/ui/account-model.h                    |    1 +
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   32 ++++++++++++++++++++
+ 3 files changed, 41 insertions(+), 0 deletions(-)
+
+commit 8f1b164d451701c41d2c15487e0472330043774e
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 22 11:16:41 2010 -0700
+
+    Added contactForIndex member
+
+ TelepathyQt4/ui/contacts-list-model.cpp |    5 +++++
+ TelepathyQt4/ui/contacts-list-model.h   |    2 ++
+ 2 files changed, 7 insertions(+), 0 deletions(-)
+
+commit 23d0b166977e041647c6e74674abcfedb37d0e64
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 22 11:07:00 2010 -0700
+
+    Fixed indentation and spaces
+
+ TelepathyQt4/ui/contacts-list-model.cpp |   77 ++++++++++++++-----------------
+ 1 files changed, 35 insertions(+), 42 deletions(-)
+
+commit 6f34405330d1e8a6918745e00d0c6f6a911069c2
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 22 10:07:25 2010 -0700
+
+    Remove obsolete files from build script
+
+ TelepathyQt4/ui/CMakeLists.txt |    3 ---
+ 1 files changed, 0 insertions(+), 3 deletions(-)
+
+commit c004fdd1e08a648c2bd463aa04acb173e904d0c9
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 22 10:00:39 2010 -0700
+
+    Remove unneeded files
+
+ TelepathyQt4/ui/abstract-tree-item.cpp |   62 --------------------
+ TelepathyQt4/ui/abstract-tree-item.h   |   54 -----------------
+ TelepathyQt4/ui/contact-item.cpp       |   99 --------------------------------
+ TelepathyQt4/ui/contact-item.h         |   68 ----------------------
+ 4 files changed, 0 insertions(+), 283 deletions(-)
+
+commit 3718d86d1c763747f405841dfeb0ecbbb172ebb5
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 22 09:59:51 2010 -0700
+
+    Check for account status changes
+
+ TelepathyQt4/ui/contacts-list-model.cpp |   48 +++++++++++++++++++++++++-----
+ TelepathyQt4/ui/contacts-list-model.h   |    8 +++++
+ 2 files changed, 48 insertions(+), 8 deletions(-)
+
+commit 57dc3ab966fa437bffef925e061907272b85312c
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Oct 21 17:32:55 2010 -0700
+
+    Add contacts to the list instead of replacing the current one
+
+ TelepathyQt4/ui/contacts-list-model.cpp |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 2b5ce3cb5674af4b78e1b066d9976dcaa0f7271d
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Oct 21 16:39:40 2010 -0700
+
+    Removed debug statement
+
+ TelepathyQt4/ui/contacts-list-model.cpp |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+commit c2acc675005b2e26f708099fc725edea5930afda
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Thu Oct 21 16:26:36 2010 -0700
+
+    Added contactCountChanged signal
+
+ TelepathyQt4/ui/contacts-list-model.cpp |    2 ++
+ TelepathyQt4/ui/contacts-list-model.h   |    3 +++
+ 2 files changed, 5 insertions(+), 0 deletions(-)
+
+commit d739f13dd051b0345ae3cc6295aa2aed38e9eb0c
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Thu Oct 21 11:22:17 2010 -0700
+
+    Fix building
+
+ TelepathyQt4/ui/account-model.cpp     |    1 +
+ TelepathyQt4/ui/conversation-item.cpp |    1 +
+ 2 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 94e319bc0349859c3264fd213d8e5426f1308c4a
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Wed Oct 20 09:20:15 2010 -0700
+
+    Add an account counter as a property
+    
+    This is required for the qml elements to get notified when the account counter changes
+
+ TelepathyQt4/ui/account-model.cpp |   10 ++++++++++
+ TelepathyQt4/ui/account-model.h   |    6 ++++++
+ 2 files changed, 16 insertions(+), 0 deletions(-)
+
+commit 675ac6ef74ab74c871a25b67fa6a76bcb49b3a63
+Author: Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk>
+Date:   Tue Oct 19 10:41:58 2010 -0700
+
+    Install the real headers for the models
+
+ TelepathyQt4/ui/CMakeLists.txt |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 974073a8577d435ee031ea0211c786feb46dcdee
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 21 16:19:14 2010 +0100
+
+    Initialize contacts and connection in the conversation example.
+
+ TelepathyQt4/ui/conversation-model.cpp             |    3 +-
+ .../ui/examples/conversation/chatwindow.cpp        |   55 ++++++++++++++++++-
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |   16 ++++--
+ .../ui/examples/conversation/conversation.qml      |    2 +-
+ 4 files changed, 66 insertions(+), 10 deletions(-)
+
+commit dad9a61a65074b41252f3751b9135a465a2e3d17
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 21 11:29:45 2010 +0100
+
+    Fix capabilityChanged connection in AccountModel::setupAccount.
+
+ TelepathyQt4/ui/account-model.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 99aa0bed1b660bd1206a8c35e438d6860c840204
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 21 11:27:34 2010 +0100
+
+    Add avatars to contact list example.
+
+ TelepathyQt4/ui/examples/accounts/ContactsView.qml |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)
+
+commit 6da40ac37d46c2fb6443c8950e1a49049426ea2a
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 20 15:33:45 2010 +0100
+
+    Make status and status message editable in AccountModel.
+
+ TelepathyQt4/ui/account-model.cpp                  |   42 ++++++++++++++++++-
+ TelepathyQt4/ui/account-model.h                    |    4 ++
+ TelepathyQt4/ui/examples/accounts/account-view.qml |    6 +--
+ 3 files changed, 45 insertions(+), 7 deletions(-)
+
+commit 3c3c394373f2702f860bd10d723093581982e41e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 20 14:40:33 2010 +0100
+
+    Allow editing of status and status message in the account QML example.
+
+ TelepathyQt4/ui/account-model.cpp                  |    5 +-
+ TelepathyQt4/ui/account-model.h                    |    1 +
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   93 ++++++++++++++++----
+ 3 files changed, 80 insertions(+), 19 deletions(-)
+
+commit 72f893bb201eb37290366373ae506499db6d8941
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 20 11:22:01 2010 +0100
+
+    Update AccountModel when accounts change.
+
+ TelepathyQt4/ui/account-model.cpp |   97 ++++++++++++++++++++++++++++++++++++-
+ TelepathyQt4/ui/account-model.h   |    4 ++
+ 2 files changed, 100 insertions(+), 1 deletions(-)
+
+commit 8185e867bd8d5329b5e680ee4819aebfd8d0780e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 20 10:42:27 2010 +0100
+
+    Update AccountModel when a new account is added.
+
+ TelepathyQt4/ui/account-model.cpp |   13 +++++++++++++
+ TelepathyQt4/ui/account-model.h   |    1 +
+ 2 files changed, 14 insertions(+), 0 deletions(-)
+
+commit 89e07781939c38cfbbd8e2e67467b5f342936eae
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 20 10:34:02 2010 +0100
+
+    Set contactsListModel in QML account example before setting the QML source.
+
+ TelepathyQt4/ui/examples/accounts/accounts.cpp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit b31bb1e0c59d9c096e0669e266c43fa1cf4469a5
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 21:16:34 2010 -0300
+
+    Cleaned up code
+
+ TelepathyQt4/ui/examples/accounts/ContactsView.qml |    6 +++---
+ TelepathyQt4/ui/examples/accounts/account-view.qml |    9 ++++++++-
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |    9 ++-------
+ 3 files changed, 13 insertions(+), 11 deletions(-)
+
+commit ed7acf0c1d23a06c0d7221aaafb701ed51216808
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 17:18:07 2010 -0300
+
+    Merged the two examples into one
+
+ TelepathyQt4/ui/examples/accounts/accounts.cpp |   11 +++++
+ TelepathyQt4/ui/examples/contacts-example.cpp  |   51 ------------------------
+ 2 files changed, 11 insertions(+), 51 deletions(-)
+
+commit 044c62624b202a128302026aac6fa8a38c2c8e66
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 16:53:42 2010 -0300
+
+    Added a new example
+
+ TelepathyQt4/ui/examples/accounts/ContactsView.qml |   46 ++++++++++++++++++
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   15 ++++--
+ TelepathyQt4/ui/examples/contacts-example.cpp      |   51 ++++++++++++++++++++
+ 3 files changed, 108 insertions(+), 4 deletions(-)
+
+commit cb8331dd9b359f4c80ce7f10fc9b1aecb18cc2ee
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 16:47:49 2010 -0300
+
+    Request needed features for contacts
+
+ TelepathyQt4/ui/contacts-list-model.cpp |   37 ++++++++++++++++++++++++++++--
+ TelepathyQt4/ui/contacts-list-model.h   |    1 +
+ 2 files changed, 35 insertions(+), 3 deletions(-)
+
+commit b242c2b0d5d0d181be16215ee14398dc0f356845
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 15:49:33 2010 -0300
+
+    Changed model to AbstractListModel
+
+ TelepathyQt4/ui/contacts-list-model.cpp |  241 +++++++------------------------
+ TelepathyQt4/ui/contacts-list-model.h   |   20 +--
+ 2 files changed, 62 insertions(+), 199 deletions(-)
+
+commit e4d80ca9dd5e94f187679b8ddeab4e5321cd4272
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Mon Oct 18 14:31:24 2010 -0300
+
+    Fixed calls and debugged model loading
+
+ TelepathyQt4/ui/contacts-list-model.cpp |   85 ++++++++++++++++++++++++++-----
+ TelepathyQt4/ui/contacts-list-model.h   |    8 ++-
+ 2 files changed, 78 insertions(+), 15 deletions(-)
+
+commit ee92415a9e2363e414fca5e77d8c4381272fd70a
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Oct 19 11:20:01 2010 +0100
+
+    Add avatar to chat delegate in ConversationModel example.
+
+ .../ui/examples/conversation/conversation.qml      |   27 +++++++++++++++++---
+ 1 files changed, 23 insertions(+), 4 deletions(-)
+
+commit 060c52f24e65f967465f7594dc697d622f0a3666
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Oct 19 10:34:45 2010 +0100
+
+    Simpler time format in chat handler.
+
+ .../ui/examples/conversation/conversation.qml      |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit a8bd3818e94b6139520b30492f672425ff8a807f
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 18 17:07:55 2010 +0100
+
+    Set reasonable initial chat window size.
+
+ .../ui/examples/conversation/chatwindow.cpp        |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit ad2348eee8c7bf4c0169df0940c4cb34349cd0b2
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Fri Oct 15 23:15:34 2010 -0300
+
+    Fixed slot logic and export statement
+
+ TelepathyQt4/ui/contact-item.h          |    1 +
+ TelepathyQt4/ui/contacts-list-model.cpp |   56 +++++++++++++++++++++++++++++-
+ TelepathyQt4/ui/contacts-list-model.h   |   13 +++++--
+ 3 files changed, 64 insertions(+), 6 deletions(-)
+
+commit 450d81bed5ca52a547b6ee3b2d98994a9e74a5c6
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 18 17:03:02 2010 +0100
+
+    Add other roles for ConversationModel.
+
+ TelepathyQt4/ui/conversation-item.cpp              |    2 +-
+ TelepathyQt4/ui/conversation-model.cpp             |   45 ++++++++++++++++++--
+ TelepathyQt4/ui/conversation-model.h               |    9 ++++-
+ .../ui/examples/conversation/conversation.qml      |   11 +----
+ 4 files changed, 51 insertions(+), 16 deletions(-)
+
+commit 926dee72a1fcf3ce2c3cafca5ace6fc6c98279ad
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Mon Oct 18 16:46:49 2010 +0100
+
+    Make the chat window example work as a telepathy client.
+
+ .../ui/examples/conversation/CMakeLists.txt        |    2 +
+ .../ui/examples/conversation/chatwindow.cpp        |   18 +++++++++++-
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |   26 +++++++++++++++++-
+ .../ui/examples/conversation/conversation.cpp      |   29 +++++++++++++++++--
+ .../ui/examples/conversation/conversation.qml      |   25 +++++++++++++++++
+ 5 files changed, 95 insertions(+), 5 deletions(-)
+
+commit d031251c20af3e9324ac4c0a3580183d9d8a75cd
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 18:50:55 2010 +0100
+
+    Initial implementation of a chat window.
+
+ .../ui/examples/conversation/chatwindow.cpp        |   24 +++++++++++++++++++-
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |   12 +++++++++-
+ .../ui/examples/conversation/conversation.cpp      |    4 +-
+ .../ui/examples/conversation/conversation.qml      |    6 +++++
+ 4 files changed, 42 insertions(+), 4 deletions(-)
+
+commit 20d2a9d634dddfe4c391438f3a50e49d58eb1b2b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 18:32:45 2010 +0100
+
+    Add example for ConversationModel.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt            |    1 +
+ .../ui/examples/conversation/CMakeLists.txt        |   18 +++++++
+ .../ui/examples/conversation/chatwindow.cpp        |   45 ++++++++++++++++++
+ TelepathyQt4/ui/examples/conversation/chatwindow.h |   50 ++++++++++++++++++++
+ .../ui/examples/conversation/conversation.cpp      |   32 +++++++++++++
+ 5 files changed, 146 insertions(+), 0 deletions(-)
+
+commit 0f32370496880800d56306d4eb32158133cef1c7
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 18:06:00 2010 +0100
+
+    Move account example in its own directory.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt            |   17 +------
+ TelepathyQt4/ui/examples/CheckBox.qml              |   29 -----------
+ TelepathyQt4/ui/examples/account-view.qml          |   51 --------------------
+ TelepathyQt4/ui/examples/accounts.cpp              |   50 -------------------
+ TelepathyQt4/ui/examples/accounts/CMakeLists.txt   |   16 ++++++
+ TelepathyQt4/ui/examples/accounts/CheckBox.qml     |   29 +++++++++++
+ TelepathyQt4/ui/examples/accounts/account-view.qml |   51 ++++++++++++++++++++
+ TelepathyQt4/ui/examples/accounts/accounts.cpp     |   50 +++++++++++++++++++
+ TelepathyQt4/ui/examples/accounts/cross.png        |  Bin 0 -> 270 bytes
+ TelepathyQt4/ui/examples/cross.png                 |  Bin 270 -> 0 bytes
+ 10 files changed, 147 insertions(+), 146 deletions(-)
+
+commit 6168795813f1d3c90eca7b4fa386f5e26686a6f2
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 17:11:52 2010 +0100
+
+    Handle received messages in ConversationModel.
+
+ TelepathyQt4/ui/conversation-model.cpp |   10 ++++++++++
+ TelepathyQt4/ui/conversation-model.h   |    1 +
+ 2 files changed, 11 insertions(+), 0 deletions(-)
+
+commit 2399ba952a372d3cc77267ee657a1e9ad794d880
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 17:07:19 2010 +0100
+
+    Add sendMessage function to ConversationModel.
+
+ TelepathyQt4/ui/CMakeLists.txt         |    1 +
+ TelepathyQt4/ui/conversation-item.cpp  |   11 ++++++++---
+ TelepathyQt4/ui/conversation-item.h    |   13 ++++++++-----
+ TelepathyQt4/ui/conversation-model.cpp |   10 ++++++++--
+ TelepathyQt4/ui/conversation-model.h   |    5 +++--
+ 5 files changed, 28 insertions(+), 12 deletions(-)
+
+commit 1ae99322861a554440aaa03a55380e5e95ee8827
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 16:47:00 2010 +0100
+
+    Initial implementation of ConversationModel.
+
+ TelepathyQt4/ui/CMakeLists.txt         |    7 +++-
+ TelepathyQt4/ui/ConversationModel      |   15 +++++++
+ TelepathyQt4/ui/account-model.h        |    1 +
+ TelepathyQt4/ui/conversation-item.cpp  |   52 ++++++++++++++++++++++++++
+ TelepathyQt4/ui/conversation-item.h    |   51 +++++++++++++++++++++++++
+ TelepathyQt4/ui/conversation-model.cpp |   64 ++++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/conversation-model.h   |   64 ++++++++++++++++++++++++++++++++
+ 7 files changed, 253 insertions(+), 1 deletions(-)
+
+commit bbd94567a6a293b7053608e8dfde94cf99f0b6db
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Fri Oct 15 12:27:09 2010 +0100
+
+    Add checkboxes to account view example and make account model editable.
+
+ TelepathyQt4/ui/account-model.cpp         |   31 ++++++++++++++++++++++++++++-
+ TelepathyQt4/ui/account-model.h           |    5 ++++
+ TelepathyQt4/ui/examples/CMakeLists.txt   |    7 +++++-
+ TelepathyQt4/ui/examples/CheckBox.qml     |   29 +++++++++++++++++++++++++++
+ TelepathyQt4/ui/examples/account-view.qml |   27 +++++++++++++++---------
+ TelepathyQt4/ui/examples/accounts.cpp     |   19 ++++++++++++++---
+ TelepathyQt4/ui/examples/cross.png        |  Bin 0 -> 270 bytes
+ 7 files changed, 102 insertions(+), 16 deletions(-)
+
+commit f164744790fd80d35e8f5c2e3a1a7d5c70aaf4d2
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 14 10:13:54 2010 +0100
+
+    Add parent argument to AccountModel's constructor.
+
+ TelepathyQt4/ui/account-model.cpp |    5 +++--
+ TelepathyQt4/ui/account-model.h   |    2 +-
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit f9b0d8100fc43596d304da51973d495234cdaad2
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 14 09:58:21 2010 +0100
+
+    Fix header installation in ui/.
+
+ TelepathyQt4/ui/CMakeLists.txt |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 6f03676bf8642a6099a4db3f60ff8ed70930a836
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 14 09:58:06 2010 +0100
+
+    Add installable header for ContactsListModel.
+
+ TelepathyQt4/ui/ContactsListModel       |   13 +++++++++++++
+ TelepathyQt4/ui/contacts-list-model.cpp |    2 +-
+ TelepathyQt4/ui/contacts-list-model.h   |   10 +++++++---
+ 3 files changed, 21 insertions(+), 4 deletions(-)
+
+commit 9dfa524b8f2ec1d9a3d83b7bc8126e06631d73bb
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Thu Oct 14 09:33:13 2010 +0100
+
+    Fix moc generation.
+
+ TelepathyQt4/ui/CMakeLists.txt          |    6 +++---
+ TelepathyQt4/ui/contact-item.cpp        |    2 +-
+ TelepathyQt4/ui/contacts-list-model.cpp |   10 ++++++++++
+ 3 files changed, 14 insertions(+), 4 deletions(-)
+
+commit 5921d827a48431f1c5bf81fa1bf8108052581a97
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 19:08:19 2010 +0100
+
+    Use a more specific name for the QML account example.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 18d850fd770d1e2c60ab2ef04daedd5fb808b68e
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 19:04:57 2010 +0100
+
+    Pass shared pointers by reference.
+
+ TelepathyQt4/ui/account-model.cpp |    2 +-
+ TelepathyQt4/ui/account-model.h   |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit fd01850c632d5b51335a7b0dfcc430f9605abc93
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Wed Oct 13 15:01:11 2010 -0300
+
+    Draft implementation of contacts list and contact item models
+
+ TelepathyQt4/ui/CMakeLists.txt          |   14 +++---
+ TelepathyQt4/ui/abstract-tree-item.h    |    2 +-
+ TelepathyQt4/ui/contact-item.cpp        |   66 +++++++++++++++++++++++++++++--
+ TelepathyQt4/ui/contact-item.h          |   23 ++++++++++-
+ TelepathyQt4/ui/contacts-list-model.cpp |   58 ++++++++++++++++++---------
+ TelepathyQt4/ui/contacts-list-model.h   |   12 ++----
+ 6 files changed, 135 insertions(+), 40 deletions(-)
+
+commit c7162ce263943f794891b873edd288f17c70c858
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 18:49:39 2010 +0100
+
+    Add ui/examples directory with a QML ListView for AccountModel.
+
+ TelepathyQt4/ui/examples/CMakeLists.txt   |   11 +++++++
+ TelepathyQt4/ui/examples/account-view.qml |   44 +++++++++++++++++++++++++++++
+ TelepathyQt4/ui/examples/accounts.cpp     |   39 +++++++++++++++++++++++++
+ 3 files changed, 94 insertions(+), 0 deletions(-)
+
+commit c7abcb9effc60a468e08609936828fc6b81445f6
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 18:48:12 2010 +0100
+
+    Generate and include mocs in ui subdirectory.
+
+ TelepathyQt4/ui/CMakeLists.txt    |    6 +++++-
+ TelepathyQt4/ui/account-model.cpp |   10 ++++++++++
+ TelepathyQt4/ui/account-model.h   |    8 +++++++-
+ 3 files changed, 22 insertions(+), 2 deletions(-)
+
+commit 33c947080b4bf6f3368acd4bb7141b39249e7d97
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 16:22:24 2010 +0100
+
+    Rename AccountsModel -> AccountModel.
+
+ TelepathyQt4/ui/AccountModel       |   13 +++++
+ TelepathyQt4/ui/CMakeLists.txt     |    4 +-
+ TelepathyQt4/ui/account-model.cpp  |  104 ++++++++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/account-model.h    |   72 +++++++++++++++++++++++++
+ TelepathyQt4/ui/accounts-model.cpp |  104 ------------------------------------
+ TelepathyQt4/ui/accounts-model.h   |   72 -------------------------
+ 6 files changed, 191 insertions(+), 178 deletions(-)
+
+commit 8a1fa41a6ba3963050a2118ee3a41d4f11ea365b
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 15:57:59 2010 +0100
+
+    Add CMakeLists.txt in ui.
+
+ TelepathyQt4/ui/CMakeLists.txt |   46 ++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 46 insertions(+), 0 deletions(-)
+
+commit fe578aaa1812b167d5fc11dcb8cb77bb89e18ee1
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 15:54:26 2010 +0100
+
+    Use standard format for the header guard of AccountsModel.
+
+ TelepathyQt4/ui/accounts-model.cpp |    3 +--
+ TelepathyQt4/ui/accounts-model.h   |   13 +++++++++----
+ 2 files changed, 10 insertions(+), 6 deletions(-)
+
+commit 41456425aeae023bbda6f83daf692e99f09b72be
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 14:12:17 2010 +0100
+
+    Remove headerData from AccountsModel.
+
+ TelepathyQt4/ui/accounts-model.cpp |   14 --------------
+ TelepathyQt4/ui/accounts-model.h   |    2 --
+ 2 files changed, 0 insertions(+), 16 deletions(-)
+
+commit cef1b4fc12642bac21655c43b962f1eb199007bb
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 11:03:38 2010 +0100
+
+    Add copyright header.
+
+ TelepathyQt4/ui/accounts-model.cpp |   20 ++++++++++++++++++++
+ TelepathyQt4/ui/accounts-model.h   |   20 ++++++++++++++++++++
+ 2 files changed, 40 insertions(+), 0 deletions(-)
+
+commit 9d7de7ba07102c43f333ab448f8834b7ec792223
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Wed Oct 13 11:01:29 2010 +0100
+
+    Add roles to AccountsModel.
+
+ TelepathyQt4/ui/accounts-model.cpp |   55 +++++++++++++++++++++++++++++------
+ TelepathyQt4/ui/accounts-model.h   |   21 ++++++++++++--
+ 2 files changed, 63 insertions(+), 13 deletions(-)
+
+commit bdae720e06da059f12da24bbb3054d9ff5196ba5
+Author: Paolo Capriotti <paolo.capriotti@collabora.co.uk>
+Date:   Tue Oct 12 17:58:47 2010 +0100
+
+    Initial implementation of AccountsModel.
+
+ TelepathyQt4/ui/accounts-model.cpp |   64 ++++++++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/accounts-model.h   |   34 +++++++++++++++++++
+ 2 files changed, 98 insertions(+), 0 deletions(-)
+
+commit de4b11467e41b23b4bb8c3956d50bb0d057a23c9
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Tue Oct 12 23:43:04 2010 -0300
+
+    Initial implementation of contacts model
+
+ TelepathyQt4/ui/abstract-tree-item.cpp  |   62 +++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/abstract-tree-item.h    |   54 +++++++++++++++++++++++++++
+ TelepathyQt4/ui/contact-item.cpp        |   41 ++++++++++++++++++++
+ TelepathyQt4/ui/contact-item.h          |   46 +++++++++++++++++++++++
+ TelepathyQt4/ui/contacts-list-model.cpp |   37 +++++++++++++++---
+ TelepathyQt4/ui/contacts-list-model.h   |   44 ++++++++++++++++++++++
+ 6 files changed, 277 insertions(+), 7 deletions(-)
+
+commit 84dd7241bab937d822514c113112f3ddec74bda9
+Author: Alvaro Soliverez <alvaro.soliverez@collabora.co.uk>
+Date:   Tue Oct 12 12:12:15 2010 -0300
+
+    Added initial contact lists model
+
+ TelepathyQt4/ui/contacts-list-model.cpp |  186 +++++++++++++++++++++++++++++++
+ TelepathyQt4/ui/contacts-list-model.h   |   40 +++++++
+ 2 files changed, 226 insertions(+), 0 deletions(-)
+
+commit fcdb5f434dd0e79c4541cbabeea54a6849c0e9c5
+Author: Mateu Batle <mateu.batle@collabora.co.uk>
+Date:   Tue Jan 11 19:51:02 2011 -0500
+
+    Fixed static methods helpers to build ChannelClassSpecs to belong to the CallChannel class
+
+ TelepathyQt4Yell/call-channel.cpp |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 13d4adecff9ea750c2b5ff950db436ba578d51ce
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:30:22 2011 -0200
+
+    call-chan test: Added test for CallChannel.
+
+ tests/dbus/CMakeLists.txt |   10 +
+ tests/dbus/call-chan.cpp  |  679 +++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 689 insertions(+), 0 deletions(-)
+
+commit f253eadac68bfe73165984e94caa9c841c216107
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:29:31 2011 -0200
+
+    Added call cm example from tp-glib with addition of Call.Content.Remove support.
+
+ tests/lib/CMakeLists.txt                 |    4 +
+ tests/lib/glib/CMakeLists.txt            |   11 +
+ tests/lib/glib/call/CMakeLists.txt       |   25 +
+ tests/lib/glib/call/call-channel.c       | 1619 ++++++++++++++++++++++++++++++
+ tests/lib/glib/call/call-channel.h       |   74 ++
+ tests/lib/glib/call/call-content.c       |  411 ++++++++
+ tests/lib/glib/call/call-content.h       |   81 ++
+ tests/lib/glib/call/call-manager.c       |  537 ++++++++++
+ tests/lib/glib/call/call-manager.h       |   71 ++
+ tests/lib/glib/call/call-stream.c        |  690 +++++++++++++
+ tests/lib/glib/call/call-stream.h        |   82 ++
+ tests/lib/glib/call/cm.c                 |   82 ++
+ tests/lib/glib/call/cm.h                 |   73 ++
+ tests/lib/glib/call/conn.c               |  427 ++++++++
+ tests/lib/glib/call/conn.h               |   77 ++
+ tests/lib/glib/call/example_call.manager |   25 +
+ tests/lib/glib/call/main.c               |   61 ++
+ tests/lib/glib/call/protocol.c           |  186 ++++
+ tests/lib/glib/call/protocol.h           |   64 ++
+ tests/lib/glib/extensions/CMakeLists.txt |  118 +++
+ tests/lib/glib/extensions/all.xml        |   11 +
+ tests/lib/glib/extensions/channel.xml    |    9 +
+ tests/lib/glib/extensions/extensions.c   |    6 +
+ tests/lib/glib/extensions/extensions.h   |   18 +
+ tests/lib/glib/extensions/misc.xml       |   14 +
+ 25 files changed, 4776 insertions(+), 0 deletions(-)
+
+commit 247ff371ff73f61e3830bde6a7bcebe569d26d7a
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:27:39 2011 -0200
+
+    Properly register types when running tests.
+
+ tests/lib/test.cpp |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 21e181f15eca634c66ff1c849e175577fe56aa01
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:24:08 2011 -0200
+
+    Added check for tp-glib used by tests.
+
+ CMakeLists.txt |   42 ++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 42 insertions(+), 0 deletions(-)
+
+commit 9dfb188d8d908fb14e929639854bafae8c59e20e
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:23:17 2011 -0200
+
+    CallChannel: Added helper methods to register with ChannelFactory and build ChannelClassSpec.
+
+ TelepathyQt4Yell/call-channel.cpp |   73 +++++++++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/call-channel.h   |   15 ++++++++
+ 2 files changed, 88 insertions(+), 0 deletions(-)
+
+commit ab206097aa4a3c2177de2e41690447af5fe2e768
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 18:22:35 2011 -0200
+
+    CallChannel: Added removeContent method.
+
+ TelepathyQt4Yell/CMakeLists.txt          |    1 +
+ TelepathyQt4Yell/call-channel-internal.h |   20 +++++++++
+ TelepathyQt4Yell/call-channel.cpp        |   64 ++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/call-channel.h          |    2 +
+ 4 files changed, 87 insertions(+), 0 deletions(-)
+
+commit 345d2c3a3749c264a59cec186013211402a58ae7
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 15:09:02 2011 -0200
+
+    CallChannel: Added high-level channel for Channel.Type.Call.
+
+ TelepathyQt4Yell/CMakeLists.txt          |    7 +
+ TelepathyQt4Yell/CallChannel             |   13 +
+ TelepathyQt4Yell/CallContent             |   13 +
+ TelepathyQt4Yell/CallStream              |   13 +
+ TelepathyQt4Yell/PendingCallContent      |   13 +
+ TelepathyQt4Yell/call-channel-internal.h |  140 ++++
+ TelepathyQt4Yell/call-channel.cpp        | 1316 ++++++++++++++++++++++++++++++
+ TelepathyQt4Yell/call-channel.h          |  222 +++++
+ TelepathyQt4Yell/types.h                 |    8 +
+ 9 files changed, 1745 insertions(+), 0 deletions(-)
+
+commit 7045a74083b0629fa469d8374a86b923ed73e7db
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 15:08:38 2011 -0200
+
+    Added .gitignore.
+
+ .gitignore |   10 ++++++++++
+ 1 files changed, 10 insertions(+), 0 deletions(-)
+
+commit cf6fee0bf643c65956e2ab20ea50666833a0e3af
+Author: Andre Moreira Magalhaes (andrunko) <andre.magalhaes@collabora.co.uk>
+Date:   Fri Jan 7 01:08:02 2011 -0200
+
+    Start developement.
+
+ AUTHORS                                            |    1 +
+ CMakeLists.txt                                     |  148 ++
+ COPYING                                            |  510 +++++++
+ ChangeLog                                          |    2 +
+ HACKING                                            |   55 +
+ NEWS                                               |   10 +
+ README                                             |   60 +
+ TODO                                               |    1 +
+ TelepathyQt4Yell/CMakeLists.txt                    |  132 ++
+ TelepathyQt4Yell/Channel                           |   13 +
+ TelepathyQt4Yell/Constants                         |   13 +
+ TelepathyQt4Yell/Global                            |   13 +
+ .../TelepathyQt4Yell-uninstalled.pc.in             |   11 +
+ TelepathyQt4Yell/TelepathyQt4Yell.pc.in            |   11 +
+ TelepathyQt4Yell/Types                             |   13 +
+ TelepathyQt4Yell/channel.cpp                       |   24 +
+ TelepathyQt4Yell/channel.h                         |   30 +
+ TelepathyQt4Yell/channel.xml                       |   14 +
+ TelepathyQt4Yell/constants.h                       |   30 +
+ TelepathyQt4Yell/global.h                          |   44 +
+ TelepathyQt4Yell/stable-interfaces.xml             |   12 +
+ TelepathyQt4Yell/types.cpp                         |   42 +
+ TelepathyQt4Yell/types.h                           |   39 +
+ cmake/modules/CompilerWarnings.cmake               |   63 +
+ cmake/modules/Doxygen.cmake                        |   24 +
+ cmake/modules/FindDBus.cmake                       |   72 +
+ cmake/modules/FindGLIB2.cmake                      |   52 +
+ cmake/modules/FindGObject.cmake                    |   75 +
+ cmake/modules/FindGStreamer.cmake                  |   80 ++
+ cmake/modules/FindLibPython.py                     |   12 +
+ cmake/modules/FindLibXml2.cmake                    |   57 +
+ cmake/modules/FindPythonLibrary.cmake              |   83 ++
+ cmake/modules/FindTelepathyFarsight.cmake          |   49 +
+ cmake/modules/FindTelepathyGlib.cmake              |   54 +
+ cmake/modules/FindTelepathyQt4.cmake               |   28 +
+ cmake/modules/MacroLogFeature.cmake                |  146 ++
+ cmake/modules/TelepathyDefaults.cmake              |  137 ++
+ cmake/modules/TelepathyDist.cmake                  |   39 +
+ cmake/modules/TpQt4Macros.cmake                    |  428 ++++++
+ cmake_uninstall.cmake.in                           |   21 +
+ config.h.in                                        |    2 +
+ doxygen-footer.html                                |    7 +
+ doxygen-header.html                                |   30 +
+ doxygen.cfg.in                                     | 1470 ++++++++++++++++++++
+ doxygen.css                                        |  434 ++++++
+ spec/Account.xml                                   |  733 ++++++++++
+ spec/Account_Interface_Addressing.xml              |   76 +
+ spec/Account_Interface_Avatar.xml                  |   76 +
+ spec/Account_Interface_Storage.xml                 |  169 +++
+ spec/Account_Manager.xml                           |  296 ++++
+ spec/Authentication_TLS_Certificate.xml            |  305 ++++
+ spec/Call_Content.xml                              |  291 ++++
+ spec/Call_Content_Codec_Offer.xml                  |   87 ++
+ spec/Call_Content_Interface_Media.xml              |  331 +++++
+ spec/Call_Content_Interface_Mute.xml               |   85 ++
+ spec/Call_Stream.xml                               |  261 ++++
+ spec/Call_Stream_Endpoint.xml                      |  182 +++
+ spec/Call_Stream_Interface_Media.xml               |  447 ++++++
+ spec/Channel.xml                                   |  557 ++++++++
+ spec/Channel_Bundle.xml                            |   48 +
+ spec/Channel_Dispatch_Operation.xml                |  483 +++++++
+ spec/Channel_Dispatcher.xml                        |  595 ++++++++
+ ...Channel_Dispatcher_Interface_Operation_List.xml |  140 ++
+ spec/Channel_Future.xml                            |   68 +
+ spec/Channel_Handler.xml                           |   78 +
+ spec/Channel_Interface_Addressing.xml              |  107 ++
+ spec/Channel_Interface_Anonymity.xml               |   68 +
+ spec/Channel_Interface_Call_State.xml              |  147 ++
+ spec/Channel_Interface_Chat_State.xml              |  144 ++
+ spec/Channel_Interface_Conference.xml              |  628 +++++++++
+ spec/Channel_Interface_DTMF.xml                    |  342 +++++
+ spec/Channel_Interface_Destroyable.xml             |   82 ++
+ spec/Channel_Interface_Group.xml                   | 1166 ++++++++++++++++
+ spec/Channel_Interface_HTML.xml                    |   86 ++
+ spec/Channel_Interface_Hold.xml                    |  222 +++
+ spec/Channel_Interface_Media_Signalling.xml        |  235 ++++
+ spec/Channel_Interface_Mergeable_Conference.xml    |  110 ++
+ spec/Channel_Interface_Messages.xml                | 1433 +++++++++++++++++++
+ spec/Channel_Interface_Password.xml                |  104 ++
+ spec/Channel_Interface_Room.xml                    |  373 +++++
+ spec/Channel_Interface_SASL_Authentication.xml     |  704 ++++++++++
+ spec/Channel_Interface_SMS.xml                     |  179 +++
+ spec/Channel_Interface_Securable.xml               |   78 +
+ spec/Channel_Interface_Service_Point.xml           |   86 ++
+ spec/Channel_Interface_Splittable.xml              |   71 +
+ spec/Channel_Interface_Transfer.xml                |   53 +
+ spec/Channel_Interface_Tube.xml                    |  258 ++++
+ spec/Channel_Request.xml                           |  300 ++++
+ spec/Channel_Type_Call.xml                         | 1429 +++++++++++++++++++
+ spec/Channel_Type_Contact_List.xml                 |  104 ++
+ spec/Channel_Type_Contact_Search.xml               |  462 ++++++
+ spec/Channel_Type_DBus_Tube.xml                    |  189 +++
+ spec/Channel_Type_File_Transfer.xml                |  531 +++++++
+ spec/Channel_Type_Room_List.xml                    |  166 +++
+ spec/Channel_Type_Server_Authentication.xml        |  121 ++
+ spec/Channel_Type_Server_TLS_Connection.xml        |   69 +
+ spec/Channel_Type_Stream_Tube.xml                  |  292 ++++
+ spec/Channel_Type_Streamed_Media.xml               |  853 ++++++++++++
+ spec/Channel_Type_Text.xml                         |  669 +++++++++
+ spec/Channel_Type_Tubes.xml                        |  615 ++++++++
+ spec/Client.xml                                    |  122 ++
+ spec/Client_Approver.xml                           |  197 +++
+ spec/Client_Handler.xml                            |  337 +++++
+ spec/Client_Handler_Future.xml                     |   88 ++
+ spec/Client_Interface_Requests.xml                 |  175 +++
+ spec/Client_Observer.xml                           |  379 +++++
+ spec/Connection.xml                                | 1293 +++++++++++++++++
+ spec/Connection_Future.xml                         |  110 ++
+ spec/Connection_Interface_Addressing.xml           |  258 ++++
+ spec/Connection_Interface_Aliasing.xml             |  185 +++
+ spec/Connection_Interface_Anonymity.xml            |  165 +++
+ spec/Connection_Interface_Avatars.xml              |  516 +++++++
+ spec/Connection_Interface_Balance.xml              |  111 ++
+ spec/Connection_Interface_Capabilities.xml         |  254 ++++
+ spec/Connection_Interface_Cellular.xml             |  131 ++
+ spec/Connection_Interface_Client_Types.xml         |  218 +++
+ spec/Connection_Interface_Communication_Policy.xml |  163 +++
+ spec/Connection_Interface_Contact_Capabilities.xml |  306 ++++
+ spec/Connection_Interface_Contact_Groups.xml       |  549 ++++++++
+ spec/Connection_Interface_Contact_Info.xml         |  550 ++++++++
+ spec/Connection_Interface_Contact_List.xml         | 1085 +++++++++++++++
+ spec/Connection_Interface_Contacts.xml             |  191 +++
+ spec/Connection_Interface_Forwarding.xml           |  346 +++++
+ spec/Connection_Interface_Keepalive.xml            |   73 +
+ spec/Connection_Interface_Location.xml             |  464 ++++++
+ spec/Connection_Interface_Mail_Notification.xml    |  624 +++++++++
+ spec/Connection_Interface_Power_Saving.xml         |  109 ++
+ spec/Connection_Interface_Presence.xml             |  346 +++++
+ spec/Connection_Interface_Privacy.xml              |   94 ++
+ spec/Connection_Interface_Renaming.xml             |   98 ++
+ spec/Connection_Interface_Requests.xml             |  628 +++++++++
+ spec/Connection_Interface_Resources.xml            |  212 +++
+ spec/Connection_Interface_Service_Point.xml        |  136 ++
+ spec/Connection_Interface_Simple_Presence.xml      |  634 +++++++++
+ spec/Connection_Manager.xml                        |  614 ++++++++
+ spec/Debug.xml                                     |  165 +++
+ spec/Media_Session_Handler.xml                     |   81 ++
+ spec/Media_Stream_Handler.xml                      |  725 ++++++++++
+ spec/Properties_Interface.xml                      |  194 +++
+ spec/Protocol.xml                                  |  485 +++++++
+ spec/Protocol_Interface_Addressing.xml             |  300 ++++
+ spec/Protocol_Interface_Avatars.xml                |  157 +++
+ spec/Protocol_Interface_Presence.xml               |  113 ++
+ spec/all.xml                                       |  303 ++++
+ spec/errors.xml                                    |  564 ++++++++
+ spec/generic-types.xml                             |  215 +++
+ spec/template.xml                                  |   33 +
+ tests/CMakeLists.txt                               |   35 +
+ tests/README                                       |   13 +
+ tests/dbus-1/CMakeLists.txt                        |    2 +
+ tests/dbus-1/session.conf.in                       |   30 +
+ tests/dbus/CMakeLists.txt                          |    9 +
+ tests/lib/CMakeLists.txt                           |    7 +
+ tests/lib/test.cpp                                 |  127 ++
+ tests/lib/test.h                                   |   62 +
+ tools/CMakeLists.txt                               |  102 ++
+ tools/c-constants-gen.py                           |  154 ++
+ tools/check-misc.sh                                |   13 +
+ tools/check-whitespace.sh                          |   17 +
+ tools/git-which-branch.sh                          |   25 +
+ tools/glib-ginterface-gen.py                       |  802 +++++++++++
+ tools/glib-gtypes-generator.py                     |  291 ++++
+ tools/glib-interfaces-gen.py                       |  119 ++
+ tools/glib-signals-marshal-gen.py                  |   55 +
+ tools/libglibcodegen.py                            |  172 +++
+ tools/libqt4codegen.py                             |  365 +++++
+ tools/libtpcodegen.py                              |  215 +++
+ tools/manager-file.py                              |  175 +++
+ tools/qt4-client-gen.py                            |  545 ++++++++
+ tools/qt4-constants-gen.py                         |  309 ++++
+ tools/qt4-types-gen.py                             |  556 ++++++++
+ tools/repeat-tests.sh                              |   23 +
+ tools/telepathy-glib.supp                          |  390 ++++++
+ tools/telepathy-qt4.supp                           |   53 +
+ tools/with-session-bus.sh                          |   94 ++
+ tools/xincludator.py                               |   39 +
+ 176 files changed, 42270 insertions(+), 0 deletions(-)
