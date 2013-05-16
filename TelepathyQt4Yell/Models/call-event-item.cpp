@@ -22,7 +22,7 @@
 
 #include "TelepathyQt4Yell/Models/_gen/call-event-item.moc.hpp"
 
-#include <TelepathyQt4/Contact>
+#include <TelepathyQt/Contact>
 
 namespace Tpy
 {
@@ -91,7 +91,7 @@ bool CallEventItem::rejectedCall() const
     return (!endActor().isNull() &&
             endReason() == Tpy::CallStateChangeReasonUserRequested &&
             duration().elapsed() <= 0 &&
-            detailedEndReason() == TP_QT4_ERROR_REJECTED);
+            detailedEndReason() == TP_QT_ERROR_REJECTED);
 }
 
 }

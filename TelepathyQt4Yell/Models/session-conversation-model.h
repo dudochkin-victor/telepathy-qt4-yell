@@ -27,8 +27,8 @@
 
 #include <TelepathyQt4Yell/Models/Global>
 
-#include <TelepathyQt4/TextChannel>
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/TextChannel>
+#include <TelepathyQt/Types>
 #include <TelepathyQt4Yell/Models/AbstractConversationModel>
 
 #include <QAbstractListModel>

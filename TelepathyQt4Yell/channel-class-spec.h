@@ -28,7 +28,7 @@
 #include <TelepathyQt4Yell/Constants>
 #include <TelepathyQt4Yell/Global>
 
-#include <TelepathyQt4/ChannelClassSpec>
+#include <TelepathyQt/ChannelClassSpec>
 
 namespace Tpy
 {

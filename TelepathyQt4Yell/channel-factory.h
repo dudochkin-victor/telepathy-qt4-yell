@@ -28,7 +28,7 @@
 #include <TelepathyQt4Yell/Global>
 #include <TelepathyQt4Yell/Types>
 
-#include <TelepathyQt4/ChannelFactory>
+#include <TelepathyQt/ChannelFactory>
 
 class QDBusConnection;
 

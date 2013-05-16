@@ -27,10 +27,10 @@
 
 #include <TelepathyQt4Yell/Models/AccountsModelItem>
 
-#include <TelepathyQt4/Account>
-#include <TelepathyQt4/AccountManager>
-#include <TelepathyQt4/TextChannel>
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/Account>
+#include <TelepathyQt/AccountManager>
+#include <TelepathyQt/TextChannel>
+#include <TelepathyQt/Types>
 
 #include <QAbstractListModel>
 

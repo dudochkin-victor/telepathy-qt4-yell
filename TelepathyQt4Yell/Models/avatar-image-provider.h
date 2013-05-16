@@ -27,7 +27,7 @@
 
 #include <TelepathyQt4Yell/Models/Global>
 
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/Types>
 
 #include <QDeclarativeImageProvider>
 #include <QDeclarativeEngine>

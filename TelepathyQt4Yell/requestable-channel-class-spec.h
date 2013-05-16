@@ -26,9 +26,9 @@
 #error IN_TELEPATHY_QT4_YELL_HEADER
 #endif
 
-#include <TelepathyQt4/Constants>
-#include <TelepathyQt4/Types>
-#include <TelepathyQt4/RequestableChannelClassSpec>
+#include <TelepathyQt/Constants>
+#include <TelepathyQt/Types>
+#include <TelepathyQt/RequestableChannelClassSpec>
 #include <TelepathyQt4Yell/Types>
 
 namespace Tpy

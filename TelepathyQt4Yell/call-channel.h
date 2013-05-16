@@ -29,12 +29,12 @@
 #include <TelepathyQt4Yell/Constants>
 #include <TelepathyQt4Yell/Types>
 
-#include <TelepathyQt4/Channel>
-#include <TelepathyQt4/ChannelClassSpec>
-#include <TelepathyQt4/ChannelFactory>
-#include <TelepathyQt4/PendingOperation>
-#include <TelepathyQt4/Types>
-#include <TelepathyQt4/SharedPtr>
+#include <TelepathyQt/Channel>
+#include <TelepathyQt/ChannelClassSpec>
+#include <TelepathyQt/ChannelFactory>
+#include <TelepathyQt/PendingOperation>
+#include <TelepathyQt/Types>
+#include <TelepathyQt/SharedPtr>
 
 namespace Tpy
 {

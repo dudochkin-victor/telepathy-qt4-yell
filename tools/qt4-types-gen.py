@@ -172,7 +172,7 @@ class Generator(object):
 #include <QDBusSignature>
 #include <QDBusVariant>
 
-#include <TelepathyQt4/Global>
+#include <TelepathyQt/Global>
 
 /**
  * \\addtogroup typesconstants Types and constants
@@ -228,7 +228,7 @@ namespace %s
 """ % self.namespace)
 
         self.impl("""\
-TELEPATHY_QT4_NO_EXPORT void _registerTypes()
+TP_QT_NO_EXPORT void _registerTypes()
 {
     static bool registered = false;
     if (registered)

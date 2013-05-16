@@ -25,7 +25,7 @@ if(PKG_CONFIG_FOUND)
 endif(PKG_CONFIG_FOUND)
 
 find_path(TELEPATHY_QT4_INCLUDE_DIR
-          NAMES TelepathyQt4/Types
+          NAMES TelepathyQt4/Types TelepathyQt/Types
           HINTS
           ${PC_TELEPATHY_QT4_INCLUDEDIR}
           ${PC_TELEPATHY_QT4_INCLUDE_DIRS}

@@ -25,11 +25,12 @@
 #include <TelepathyQt4Yell/Models/TextEventItem>
 #include <TelepathyQt4Yell/Models/CustomEventItem>
 
-#include <TelepathyQt4/AvatarData>
-#include <TelepathyQt4/Connection>
-#include <TelepathyQt4/ContactManager>
-#include <TelepathyQt4/PendingReady>
-#include <TelepathyQt4/ReceivedMessage>
+#include <TelepathyQt/AvatarData>
+#include <TelepathyQt/Connection>
+#include <TelepathyQt/ContactManager>
+#include <TelepathyQt/PendingReady>
+#include <TelepathyQt/ReceivedMessage>
+#include <TelepathyQt/PendingContacts>
 
 #include <QPixmap>
 #include <QtAlgorithms>
@@ -78,7 +79,13 @@ void SessionConversationModel::sendMessage(const QString &text)
         !mPriv->mChannel->connection().isNull() &&
         !mPriv->mChannel->connection()->contactManager().isNull()) {
         uint handle = mPriv->mChannel->targetHandle();
-        receiver = mPriv->mChannel->connection()->contactManager()->lookupContactByHandle(handle);
+        //receiver = mPriv->mChannel->connection()->contactManager()->lookupContactByHandle(handle);
+
+        Tp::UIntList handleList;
+        handleList << handle;
+
+        receiver = mPriv->mChannel->connection()->contactManager()->contactsForHandles(handleList)->contacts().first();
+        //Tp::ContactPtr contactPtr (m_pContactManager->contactsForHandles(handleList)->contacts().first());
     }
     TextEventItem *item = new TextEventItem(mPriv->mSelf, receiver,
         QDateTime::currentDateTime(), text, Tp::ChannelTextMessageTypeNormal, this);

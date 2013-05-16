@@ -20,8 +20,8 @@
 
 #include <TelepathyQt4Yell/Models/AvatarImageProvider>
 
-#include <TelepathyQt4/Account>
-#include <TelepathyQt4/AccountManager>
+#include <TelepathyQt/Account>
+#include <TelepathyQt/AccountManager>
 
 namespace Tpy
 {
@@ -59,7 +59,7 @@ void AvatarImageProvider::registerProvider(QDeclarativeEngine *engine, const Tp:
 
 QImage AvatarImageProvider::requestImage(const QString &id, QSize *size, const QSize &requestedSize)
 {
-    QString path = QString::fromLatin1(TELEPATHY_ACCOUNT_OBJECT_PATH_BASE "/") + id;
+    QString path = TP_QT_ACCOUNT_OBJECT_PATH_BASE + QString::fromLatin1("/") + id;
     Tp::AccountPtr account = mPriv->mAM->accountForPath(path);
     QImage image;
     image.loadFromData(account->avatar().avatarData);

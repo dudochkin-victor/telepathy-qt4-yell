@@ -27,7 +27,7 @@
 
 #include <TelepathyQt4Yell/_gen/types.h>
 
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/Types>
 
 namespace Tpy
 {

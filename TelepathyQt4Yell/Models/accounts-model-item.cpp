@@ -26,8 +26,8 @@
 #include <TelepathyQt4Yell/Models/AvatarImageProvider>
 #include <TelepathyQt4Yell/Models/ContactModelItem>
 
-#include <TelepathyQt4/Account>
-#include <TelepathyQt4/ContactManager>
+#include <TelepathyQt/Account>
+#include <TelepathyQt/ContactManager>
 
 namespace Tpy
 {

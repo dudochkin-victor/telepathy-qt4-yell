@@ -27,9 +27,9 @@
 #include <TelepathyQt4Yell/ContactCapabilities>
 #include <TelepathyQt4Yell/RequestableChannelClassSpec>
 
-#include <TelepathyQt4/AvatarData>
-#include <TelepathyQt4/ContactManager>
-#include <TelepathyQt4/ContactCapabilities>
+#include <TelepathyQt/AvatarData>
+#include <TelepathyQt/ContactManager>
+#include <TelepathyQt/ContactCapabilities>
 
 #include <QImage>
 

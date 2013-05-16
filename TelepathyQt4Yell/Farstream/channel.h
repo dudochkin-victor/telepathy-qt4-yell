@@ -29,8 +29,8 @@
 #include <TelepathyQt4Yell/Farstream/Global>
 #include <TelepathyQt4Yell/Farstream/Types>
 
-#include <TelepathyQt4/PendingOperation>
-#include <TelepathyQt4/RefCounted>
+#include <TelepathyQt/PendingOperation>
+#include <TelepathyQt/RefCounted>
 
 #include <telepathy-farstream/channel.h>
 

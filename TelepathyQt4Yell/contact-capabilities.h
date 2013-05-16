@@ -26,8 +26,8 @@
 #error IN_TELEPATHY_QT4_YELL_HEADER
 #endif
 
-#include <TelepathyQt4/ContactCapabilities>
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/ContactCapabilities>
+#include <TelepathyQt/Types>
 #include <TelepathyQt4Yell/Types>
 
 namespace Tpy

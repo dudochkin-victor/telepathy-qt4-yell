@@ -35,7 +35,7 @@ struct TELEPATHY_QT4_YELL_NO_EXPORT CallStream::Private
     // Public object
     CallStream *parent;
 
-    QWeakPointer<CallContent> content;
+    Tp::WeakPtr<CallContent> content;
 
     // Mandatory proxies
     Client::CallStreamInterface *streamInterface;
@@ -92,7 +92,7 @@ struct TELEPATHY_QT4_YELL_NO_EXPORT CallContent::Private
     // Public object
     CallContent *parent;
 
-    QWeakPointer<CallChannel> channel;
+    Tp::WeakPtr<CallChannel> channel;
 
     // Mandatory proxies
     Client::CallContentInterface *contentInterface;

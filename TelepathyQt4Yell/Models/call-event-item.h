@@ -29,7 +29,7 @@
 #include <TelepathyQt4Yell/Models/Global>
 #include <TelepathyQt4Yell/Constants>
 
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/Types>
 
 #include <QDateTime>
 #include <QString>

@@ -26,9 +26,9 @@
 #include <TelepathyQt4Yell/Models/CustomEventItem>
 #include <TelepathyQt4Yell/Models/TextEventItem>
 
-#include <TelepathyQt4/AvatarData>
-#include <TelepathyQt4/PendingReady>
-#include <TelepathyQt4/ReceivedMessage>
+#include <TelepathyQt/AvatarData>
+#include <TelepathyQt/PendingReady>
+#include <TelepathyQt/ReceivedMessage>
 
 #include <QPixmap>
 #include <QtAlgorithms>

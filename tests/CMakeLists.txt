@@ -31,5 +31,5 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/_gen)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILER_COVERAGE_FLAGS}")
 
 add_subdirectory(dbus-1)
-add_subdirectory(dbus)
+#add_subdirectory(dbus)
 add_subdirectory(lib)

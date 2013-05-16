@@ -59,11 +59,11 @@ set(telepathy_qt4_yell_gen_HEADERS
 if(MSVC)
     set(TYPES_INCLUDE ^<TelepathyQt4Yell/Types^> )
     set(GLOBAL_INCLUDE ^<TelepathyQt4Yell/Global^> )
-    set(CHANNEL_EXTRA_INCLUDES '^<TelepathyQt4Yell/Types^>,^<TelepathyQt4/Channel^>' )
+    set(CHANNEL_EXTRA_INCLUDES '^<TelepathyQt4Yell/Types^>,^<TelepathyQt/Channel^>' )
 else(MSVC)
     set(TYPES_INCLUDE '<TelepathyQt4Yell/Types>' )
     set(GLOBAL_INCLUDE '<TelepathyQt4Yell/Global>' )
-    set(CHANNEL_EXTRA_INCLUDES '<TelepathyQt4Yell/Types>,<TelepathyQt4/Channel>' )
+    set(CHANNEL_EXTRA_INCLUDES '<TelepathyQt4Yell/Types>,<TelepathyQt/Channel>' )
 endif(MSVC)
 
 # Generate the spec files

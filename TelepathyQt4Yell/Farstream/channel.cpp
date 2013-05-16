@@ -23,8 +23,8 @@
 
 #include "TelepathyQt4Yell/Farstream/_gen/channel.moc.hpp"
 
-#include <TelepathyQt4/Channel>
-#include <TelepathyQt4/Connection>
+#include <TelepathyQt/Channel>
+#include <TelepathyQt/Connection>
 
 #include <TelepathyQt4Yell/CallChannel>
 #include <TelepathyQt4Yell/Farstream/global.h>
@@ -58,21 +58,21 @@ PendingTfChannel::PendingTfChannel(const FarstreamChannelFactoryPtr &fcf,
       mPriv(new PendingTfChannel::Private(channel))
 {
     if (!mPriv->mChannel->handlerStreamingRequired()) {
-        setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE,
+        setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE,
                 QLatin1String("Handler streaming not required"));
         return;
     }
 
     TpDBusDaemon *dbus = tp_dbus_daemon_dup(0);
     if (!dbus) {
-        setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE,
+        setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE,
                 QLatin1String("Unable to connect to D-Bus"));
         return;
     }
 
     Tp::ConnectionPtr connection = mPriv->mChannel->connection();
     if (connection.isNull()) {
-        setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE,
+        setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE,
                 QLatin1String("Connection not available"));
         g_object_unref(dbus);
         return;
@@ -85,7 +85,7 @@ PendingTfChannel::PendingTfChannel(const FarstreamChannelFactoryPtr &fcf,
     g_object_unref(dbus);
     dbus = 0;
     if (!gconnection) {
-        setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE,
+        setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE,
                 QLatin1String("Unable to construct TpConnection"));
         return;
     }
@@ -99,7 +99,7 @@ PendingTfChannel::PendingTfChannel(const FarstreamChannelFactoryPtr &fcf,
     g_object_unref(gconnection);
     gconnection = 0;
     if (!gchannel) {
-        setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE,
+        setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE,
                 QLatin1String("Unable to construct TpChannel"));
         return;
     }
@@ -128,7 +128,7 @@ void PendingTfChannel::Private::onTfChannelNewFinish(GObject *sourceObject,
     if (error) {
         qDebug() << "PendingTfChannel::Private::onTfChannelNewFinish: error " << error->message;
         g_clear_error(&error);
-        self->setFinishedWithError(TP_QT4_ERROR_NOT_AVAILABLE, QLatin1String(error->message));
+        self->setFinishedWithError(TP_QT_ERROR_NOT_AVAILABLE, QLatin1String(error->message));
         return;
     }
 

@@ -27,7 +27,7 @@
 
 #include <TelepathyQt4Yell/Models/TreeNode>
 
-#include <TelepathyQt4/Types>
+#include <TelepathyQt/Types>
 
 namespace Tpy
 {

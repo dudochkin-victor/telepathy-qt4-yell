@@ -22,8 +22,8 @@
 
 #include "TelepathyQt4Yell/Models/_gen/accounts-model.moc.hpp"
 
-#include <TelepathyQt4/ContactManager>
-#include <TelepathyQt4/PendingReady>
+#include <TelepathyQt/ContactManager>
+#include <TelepathyQt/PendingReady>
 
 #include <TelepathyQt4Yell/Models/AccountsModelItem>
 #include <TelepathyQt4Yell/Models/ContactModelItem>

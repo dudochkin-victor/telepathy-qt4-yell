@@ -22,7 +22,7 @@
 
 #include "TelepathyQt4Yell/Models/_gen/event-item.moc.hpp"
 
-#include <TelepathyQt4/Contact>
+#include <TelepathyQt/Contact>
 
 namespace Tpy
 {
